@@ -1,0 +1,78 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    color: #fff;
+    background: #02658c;
+}
+
+#page-content-wrapper {
+    position: absolute;
+    left: 300px;
+    right: 0px;
+    padding: 15px;
+}
+
+.sidebar-nav {
+    position: relative;
+    top: 100px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 60px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.5);
+}
+.logo{
+    position: relative;
+    margin-top: 25px;
+    width: 300px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 26pt;
+}
+.bold{
+    font-weight: 900;
+}
+.userdata{
+    position: relative;
+    margin-top: 50px;
+    width: 300px;
+}
+.profil_pic{
+    position: relative;
+    left: 90px;
+    width: 120px;
+    height: 120px;
+    background-image: url(profil_pic.png);
+}
+.user_name{
+    position: relative;
+    top: 20px;
+    left: 0px;
+    width: 300px;
+    padding: 0px px;
+    text-align: center;
+    font-size: 12pt;
+}
+.glyphicon-home, .glyphicon-file, .glyphicon-send{
+        margin-right: 50px;
+}
