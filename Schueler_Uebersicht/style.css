@@ -1,6 +1,6 @@
 .logo{
 	position:relative;
-
+	padding-top:20px;
 	font-family: Montserrat;
 	font-size:30px;
 	font-weight:400;
@@ -14,7 +14,7 @@
 .name{
 	position:relative;
 	text-align: center;
-	margin-top:15px;
+	top:30px;
 	margin-right:25px;
 }
 .icon_small{
@@ -23,12 +23,127 @@
 
 .abmelden{
 	position:relative;
-	margin-top:7px;
+	top:24px;
 }
 
 .head_row{
-	margin-top:-21px;
+	top:10px;
+	height:2px;
+}
+
+.row_green{
 	color:green;
 	background-color: green;
-	height:2px;
+}
+
+.collapsed{
+	top:15px;
+}
+
+.main{
+	position: absolute;
+	background-color:#f6f7f7;
+	top:86px;
+	bottom:0px;
+	width:100%;
+}
+
+.navbar1{
+	background-color: white;
+	border:0px;
+}
+
+
+.fachbox{
+	width:230pt;
+	height:250pt;
+	text-align: center;
+	border:1px solid #aaa;
+	border-radius:15px;
+}
+
+.classname{
+	font-weight: bold;
+	position: relative;
+	top:25px;
+	font-family: Montserrat;
+	font-size:18px;
+}
+
+.teachername{
+	position: relative;
+	font-size:16px;
+	top:28px;
+	font-family: Open Sans;
+}
+
+.classrow{
+	position: relative;
+	margin-top:55px;
+	width:75%;
+	height:1px;
+	color:#ccc;
+	background-color: #ccc;
+}
+
+.badgecount{
+	position: relative;
+	top:-10px;
+	font-family:Montserrat;
+	font-size:72px;
+	font-weight:bold;
+	color:#4eb96e;
+}
+
+.badgegot{
+	position: relative;
+	top:-10px;
+	font-family:Montserrat;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.showbtn{
+	position: relative;
+	font-family: Open Sans;
+	top: 20px;
+	width:150px;
+	height:36px;
+	border-radius:10px;
+	color: #4eb96e;
+	border:1px solid #4eb96e;
+}
+
+.subjects{
+	position: relative;
+	font-family:Montserrat;
+	font-size:28px;
+	font-weight: bold;
+	margin-left:10%;
+}
+
+.row_grey{
+	width:90%;
+	color:#ccc;
+	background-color: #ccc;
+}
+
+.fachbox{
+	margin-left:7%;
+	margin-bottom: 30px;
+}
+
+.sort_btns{
+	float:right;
+	margin-right:10%;
+}
+
+.sort1, .sort2{
+	margin-left:10px;
+	border-radius: 50px;
+	border:0px solid black;
+	background-color:#ddd;
+	font-size:20px;
+	width:30pt;
+	height:30pt;
 }
