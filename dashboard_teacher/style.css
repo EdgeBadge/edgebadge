@@ -113,16 +113,16 @@ h1{
     margin-top: 0px;
 }
 
-@media(max-width:768px) {
+@media(max-width:980px) {
 
     #menu-toggle{
         display: inline-block;
         position: relative;
-        left: 5px;
-        top: 5px;
+        left: 30px;
+        top: 20px;
     }
     #sidebar-wrapper {
-        width: 50px;
+        width: 100px;
     }
     .logo{
         display: none;
@@ -131,15 +131,17 @@ h1{
         display: none;
     }
     .sidebar-nav{
-        top: 50px;
-        width: 50px;
+        top: 30px;
+        width: 100px;
     }
     .sidebar-nav li {
-    text-indent: 15px;
-    line-height: 15px;
+    	text-indent: 17.5px;
+    	line-height: 15px;
     }
     .sidebar-nav li a {
+    	padding-top: 15px;
         padding-bottom: 15px;
+        font-size: 30px;
     }
     .linkname{
         display: none;
@@ -164,6 +166,8 @@ h1{
         line-height: 60px;
     }
     #wrapper.toggled .sidebar-nav li a {
+    		font-size: 16px;
+    		padding-top: 0px;
         padding-bottom: 0px;
     }
     #wrapper.toggled .linkname {
@@ -174,7 +178,7 @@ h1{
     }
 
     #page-content-wrapper {
-        left: 50px;
+        left: 100px;
     }
 
     #wrapper.toggled #page-content-wrapper {
