@@ -1,6 +1,8 @@
 body{
     font-family: 'Open Sans', sans-serif;
+    background-color: #BBB;
 }
+
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -14,7 +16,6 @@ body{
     position: absolute;
     left: 300px;
     right: 0px;
-    padding: 15px;
 }
 
 .sidebar-nav {
@@ -62,17 +63,122 @@ body{
     left: 90px;
     width: 120px;
     height: 120px;
-    background-image: url(profil_pic.png);
 }
 .user_name{
     position: relative;
     top: 20px;
-    left: 0px;
     width: 300px;
-    padding: 0px px;
     text-align: center;
     font-size: 12pt;
 }
-.glyphicon-home, .glyphicon-file, .glyphicon-send{
+#menu-toggle{
+    display: none;
+}
+.glyphicon-home, .glyphicon-file, .glyphicon-send, .glyphicon-cog{
         margin-right: 50px;
+}
+
+.subtitle{    
+    background-color: #FFF;
+    padding: 32.5px 30px 1px 30px;
+}
+
+.switch{
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 30px;
+    background-color: #FFF;
+}
+.list-inline > li > a{
+    color: #4d4d4d;
+    padding: 2.5px 0px;
+    margin-right: 25px;
+}
+
+.list-inline > li > a:hover{
+    border-bottom: 1px solid #02658c;
+    border-radius: 0px;
+}
+.panel-default{
+    box-shadow: none;
+}
+.overview{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+}
+h1{
+    margin-top: 0px;
+}
+
+@media(max-width:768px) {
+
+    #menu-toggle{
+        display: inline-block;
+        position: relative;
+        left: 5px;
+        top: 5px;
+    }
+    #sidebar-wrapper {
+        width: 50px;
+    }
+    .logo{
+        display: none;
+    }
+    .userdata{
+        display: none;
+    }
+    .sidebar-nav{
+        top: 50px;
+        width: 50px;
+    }
+    .sidebar-nav li {
+    text-indent: 15px;
+    line-height: 15px;
+    }
+    .sidebar-nav li a {
+        padding-bottom: 15px;
+    }
+    .linkname{
+        display: none;
+    }
+
+    #wrapper.toggled #menu-toggle {
+        top: 50px;
+        left: 125px;
+    }
+    #wrapper.toggled .logo {
+        display: inline-block;
+    }
+    #wrapper.toggled .userdata {
+        display: inline-block;
+    }
+    #wrapper.toggled .sidebar-nav {
+        top: 100px;
+        width: 300px;
+    }
+    #wrapper.toggled .sidebar-nav li {
+        text-indent: 20px;
+        line-height: 60px;
+    }
+    #wrapper.toggled .sidebar-nav li a {
+        padding-bottom: 0px;
+    }
+    #wrapper.toggled .linkname {
+        display: inline-block;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 300px;
+    }
+
+    #page-content-wrapper {
+        left: 50px;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        left: 300px;
+    }
 }
