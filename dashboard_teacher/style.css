@@ -1,6 +1,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: #BBB;
+
 }
 
 #sidebar-wrapper {
@@ -9,7 +9,7 @@ body{
     width: 300px;
     height: 100%;
     color: #fff;
-    background: #02658c;
+    background: #1BA39C;
 }
 
 #page-content-wrapper {
@@ -69,120 +69,90 @@ body{
     top: 20px;
     width: 300px;
     text-align: center;
-    font-size: 12pt;
+    font-size: 14px;
 }
-#menu-toggle{
-    display: none;
-}
+
 .glyphicon-home, .glyphicon-file, .glyphicon-send, .glyphicon-cog{
         margin-right: 50px;
 }
+.row{
+    margin: 0px;
+}
 
-.subtitle{    
-    background-color: #FFF;
+.subtitle{
+    max-width: 900px;
     padding: 32.5px 30px 1px 30px;
 }
 
 .switch{
-    position: relative;
     width: 100%;
-    padding-top: 50px;
-    padding-left: 30px;
+    padding: 50px 30px 0px 30px;
     background-color: #FFF;
 }
 .list-inline > li > a{
     color: #4d4d4d;
     padding: 2.5px 0px;
-    margin-right: 25px;
 }
 
 .list-inline > li > a:hover{
     border-bottom: 1px solid #02658c;
     border-radius: 0px;
 }
-.panel-default{
-    box-shadow: none;
-}
+
 .overview{
-    position: relative;
     width: 100%;
     height: 100%;
-    padding: 10px 20px;
+    padding: 30px 20px;
+    background-color: #EDF3F4;
 }
+
+.panel-default{
+    box-shadow: none;
+    padding: 10px 0px;
+}
+
 h1{
     margin-top: 0px;
 }
 
-@media(max-width:980px) {
-
-    #menu-toggle{
-        display: inline-block;
-        position: relative;
-        left: 30px;
-        top: 20px;
-    }
+@media(max-width:990px) {
     #sidebar-wrapper {
-        width: 100px;
+        width: 200px;
     }
     .logo{
-        display: none;
+        font-size: 22px;
+        width: 200px;
     }
     .userdata{
-        display: none;
+        margin-top: 25px;
+        width: 200px
+    }
+    .profil_pic{
+        left: 40px;
+    }
+    .user_name{
+        width: 200px;
+        font-size: 12px; 
     }
     .sidebar-nav{
-        top: 30px;
-        width: 100px;
+        top: 40px;
+        width: 200px;
     }
     .sidebar-nav li {
-    	text-indent: 17.5px;
-    	line-height: 15px;
+    	text-indent: 8px;
+    	line-height: 2px;
     }
     .sidebar-nav li a {
-    	padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: 30px;
-    }
-    .linkname{
-        display: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 14px;
     }
 
-    #wrapper.toggled #menu-toggle {
-        top: 50px;
-        left: 125px;
-    }
-    #wrapper.toggled .logo {
-        display: inline-block;
-    }
-    #wrapper.toggled .userdata {
-        display: inline-block;
-    }
-    #wrapper.toggled .sidebar-nav {
-        top: 100px;
-        width: 300px;
-    }
-    #wrapper.toggled .sidebar-nav li {
-        text-indent: 20px;
-        line-height: 60px;
-    }
-    #wrapper.toggled .sidebar-nav li a {
-    		font-size: 16px;
-    		padding-top: 0px;
-        padding-bottom: 0px;
-    }
-    #wrapper.toggled .linkname {
-        display: inline-block;
-    }
-    #wrapper.toggled #sidebar-wrapper {
-        width: 300px;
-    }
+    .glyphicon-home, .glyphicon-file, .glyphicon-send, .glyphicon-cog{
+        margin-right: 25px;
+}
 
     #page-content-wrapper {
-        left: 100px;
-    }
-
-    #wrapper.toggled #page-content-wrapper {
-        position: relative;
-        left: 300px;
+        left: 200px;
     }
 }

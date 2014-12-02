@@ -3,7 +3,7 @@
 <head>
 <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   
-  <meta charset="utf-8">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>EdgeBadge Schüler</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css" type="text/css" />
@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar1" role="navigation">
+<nav class="navbar navbar-default navbar1 navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -28,8 +28,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
       <ul class="nav navbar-nav navbar-right">
-      <li><div class="name"><span class="profilicon icon_small glyphicon glyphicon-user"></span> Max Mustermann</div></li>
-      <li><button type="button" class="btn btn-default abmelden"><span class="log_out_icon glyphicon glyphicon-log-out"></span></button></li>
+      <li><div class="name"><img src="glyphicons_003_user.png" class="img-circle icon_small" width="30" height="30" /> Max Mustermann</div></li>
+      <li><button type="button" class="btn btn-default abmelden"><!--<span class="log_out_icon glyphicon glyphicon-log-out"></span>-->Abmelden</button></li>
         
       </ul>
     </div>
@@ -40,81 +40,86 @@
 
 <div class="main">
 <br /><br />
-<div class="subjects">MEINE FÄCHER <div class="sort_btns"> <button class="sort1">A</button><button class="sort2">B</button></div></div> 
+<div class="subjects"><button class="btn_back1"></button> MEINE FÄCHER <div class="sort_btns"> <button class="sort1">A</button><button class="sort2">B</button></div></div> 
 
 <hr class="head_row row_grey">
 
 <br /><br />
+<div class="container-fluid boxes">
 
-  <div class="fachbox col-sm-3">
-    <span class="classname">DEUTSCH</span><br />
-    <span class="teachername">Herr. Prof. Sattek</span>
-    <hr class="classrow">
-    <span class="badgecount">2</span><br />
-    <span class="badgegot">Badges earned</span><br />
-    <button class="btn btn-default showbtn">Anzeigen</button>
-  </div>
-  <div class="fachbox col-sm-3">
-    <span class="classname">DEUTSCH</span><br />
-    <span class="teachername">Herr. Prof. Sattek</span>
-    <hr class="classrow">
-    <span class="badgecount">2</span><br />
-    <span class="badgegot">Badges earned</span><br />
-    <button class="btn btn-default showbtn">Anzeigen</button>
-  </div>
-  <div class="fachbox col-sm-3">
-    <span class="classname">DEUTSCH</span><br />
-    <span class="teachername">Herr. Prof. Sattek</span>
-    <hr class="classrow">
-    <span class="badgecount">2</span><br />
-    <span class="badgegot">Badges earned</span><br />
-    <button class="btn btn-default showbtn">Anzeigen</button>
-  </div>
-  <div class="fachbox col-sm-3">
-    <span class="classname">DEUTSCH</span><br />
-    <span class="teachername">Herr. Prof. Sattek</span>
-    <hr class="classrow">
-    <span class="badgecount">2</span><br />
-    <span class="badgegot">Badges earned</span><br />
-    <button class="btn btn-default showbtn">Anzeigen</button>
-  </div>
-  <div class="fachbox col-sm-3">
-    <span class="classname">DEUTSCH</span><br />
-    <span class="teachername">Herr. Prof. Sattek</span>
-    <hr class="classrow">
-    <span class="badgecount">2</span><br />
-    <span class="badgegot">Badges earned</span><br />
-    <button class="btn btn-default showbtn">Anzeigen</button>
-  </div>
-  <div class="fachbox col-sm-3">
-    <span class="classname">DEUTSCH</span><br />
-    <span class="teachername">Herr. Prof. Sattek</span>
-    <hr class="classrow">
-    <span class="badgecount">2</span><br />
-    <span class="badgegot">Badges earned</span><br />
-    <button class="btn btn-default showbtn">Anzeigen</button>
-  </div>
-  <div class="fachbox col-sm-3">
-    <span class="classname">DEUTSCH</span><br />
-    <span class="teachername">Herr. Prof. Sattek</span>
-    <hr class="classrow">
-    <span class="badgecount">2</span><br />
-    <span class="badgegot">Badges earned</span><br />
-    <button class="btn btn-default showbtn">Anzeigen</button>
-  </div>
-  <div class="fachbox col-sm-3">
-    <span class="classname">DEUTSCH</span><br />
-    <span class="teachername">Herr. Prof. Sattek</span>
-    <hr class="classrow">
-    <span class="badgecount">2</span><br />
-    <span class="badgegot">Badges earned</span><br />
-    <button class="btn btn-default showbtn">Anzeigen</button>
+  <div>
+    <div class="fachbox col-xs-10 col-sm-5 col-md-3 col-lg-2">
+      <span class="classname">DEUTSCH</span><br />
+      <span class="teachername">Herr. Prof. Sattek</span>
+      <hr class="classrow">
+      <span class="badgecount">2</span><br />
+      <span class="badgegot">Badges earned</span><br />
+      <button class="btn btn-default showbtn" data-subject="DEUTSCH">Anzeigen</button>
+    </div>
+    <div class="fachbox col-xs-10 col-sm-5 col-md-3 col-lg-2">
+      <span class="classname">MEDIENTECHNIK</span><br />
+      <span class="teachername">Herr. Prof. Weiss</span>
+      <hr class="classrow">
+      <span class="badgecount">2</span><br />
+      <span class="badgegot">Badges earned</span><br />
+      <button class="btn btn-default showbtn" data-subject="MEDIENTECHNIK">Anzeigen</button>
+    </div>
+    <div class="fachbox col-xs-10 col-sm-5 col-md-3 col-lg-2">
+      <span class="classname">PROJEKTMANAGEMENT</span><br />
+      <span class="teachername">Frau. Prof. Bayandor</span>
+      <hr class="classrow">
+      <span class="badgecount">2</span><br />
+      <span class="badgegot">Badges earned</span><br />
+      <button class="btn btn-default showbtn" data-subject="PROJEKTMANAGEMENT">Anzeigen</button>
+    </div>
+    <div class="fachbox col-xs-10 col-sm-5 col-md-3 col-lg-2">
+      <span class="classname">DEUTSCH</span><br />
+      <span class="teachername">Herr. Prof. Sattek</span>
+      <hr class="classrow">
+      <span class="badgecount">2</span><br />
+      <span class="badgegot">Badges earned</span><br />
+      <button class="btn btn-default showbtn" data-subject="DEUTSCH">Anzeigen</button>
+    </div>
+    <div class="fachbox col-xs-10 col-sm-5 col-md-3 col-lg-2">
+      <span class="classname">DEUTSCH</span><br />
+      <span class="teachername">Herr. Prof. Sattek</span>
+      <hr class="classrow">
+      <span class="badgecount">2</span><br />
+      <span class="badgegot">Badges earned</span><br />
+      <button class="btn btn-default showbtn" data-subject="DEUTSCH">Anzeigen</button>
+    </div>
+    <div class="fachbox col-xs-10 col-sm-5 col-md-3 col-lg-2">
+      <span class="classname">DEUTSCH</span><br />
+      <span class="teachername">Herr. Prof. Sattek</span>
+      <hr class="classrow">
+      <span class="badgecount">2</span><br />
+      <span class="badgegot">Badges earned</span><br />
+      <button class="btn btn-default showbtn" data-subject="DEUTSCH">Anzeigen</button>
+    </div>
+    <div class="fachbox col-xs-10 col-sm-5 col-md-3 col-lg-2">
+      <span class="classname">DEUTSCH</span><br />
+      <span class="teachername">Herr. Prof. Sattek</span>
+      <hr class="classrow">
+      <span class="badgecount">2</span><br />
+      <span class="badgegot">Badges earned</span><br />
+      <button class="btn btn-default showbtn" data-subject="DEUTSCH">Anzeigen</button>
+    </div>
+    <div class="fachbox col-xs-10 col-sm-5 col-md-3 col-lg-2">
+      <span class="classname">DEUTSCH</span><br />
+      <span class="teachername">Herr. Prof. Sattek</span>
+      <hr class="classrow">
+      <span class="badgecount">2</span><br />
+      <span class="badgegot">Badges earned</span><br />
+      <button class="btn btn-default showbtn" data-subject="DEUTSCH">Anzeigen</button>
+    </div>
   </div>
 </div>
 
 
+<div class="container-fluid fachansicht">
+HALLO
 
-
+</div>
 
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>

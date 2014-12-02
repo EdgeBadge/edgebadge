@@ -1,6 +1,11 @@
+body{
+	background-color:#f6f7f7;
+}
+
 .logo{
 	position:relative;
 	padding-top:20px;
+	padding-bottom:20px;
 	font-family: Montserrat;
 	font-size:30px;
 	font-weight:400;
@@ -19,11 +24,16 @@
 }
 .icon_small{
 	margin-right:20px;
+	border:1px solid #4eb96e;
 }
 
 .abmelden{
 	position:relative;
-	top:24px;
+	top:27px;
+	border-radius:10px;
+	color: #4eb96e;
+	border:1px solid #4eb96e;
+	margin-right:15px;
 }
 
 .head_row{
@@ -51,11 +61,11 @@
 .navbar1{
 	background-color: white;
 	border:0px;
+	border-bottom: 2px solid green;
 }
 
 
 .fachbox{
-	width:230pt;
 	height:250pt;
 	text-align: center;
 	border:1px solid #aaa;
@@ -129,8 +139,28 @@
 }
 
 .fachbox{
-	margin-left:7%;
 	margin-bottom: 30px;
+	background-color:white;
+	margin-left:6.5%;
+}
+
+
+@media (max-width: 1580px) and (min-width: 980px) {
+	.fachbox{
+		width:26%;
+	}	
+}
+
+@media (max-width: 420px){
+	.row_grey{
+		visibility: hidden;
+	}
+	.classname{
+		font-size:14px;
+	}
+	.teachername{
+		font-size:14px;
+	}
 }
 
 .sort_btns{
@@ -146,4 +176,22 @@
 	font-size:20px;
 	width:30pt;
 	height:30pt;
+}
+
+.btn_back1{
+	position: relative;
+	border-radius: 50px;
+	margin-right:5px;
+	bottom:8px;
+	border:0px;
+	width:40px;
+	height:40px;
+	background-image: url(backbtn.svg);
+	display:none;
+}
+
+.fachansicht{
+	display:none;
+	margin-left:10%;
+	margin-right:10%;
 }
