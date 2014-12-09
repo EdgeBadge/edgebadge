@@ -35,6 +35,17 @@ body{
 	color: #4eb96e;
 	border:1px solid #4eb96e;
 	margin-right:15px;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+
+.abmelden:hover{
+	color:#74d600;
+	border-color: #74d600;
+	background-color:white;
 }
 
 .head_row{
@@ -123,6 +134,17 @@ body{
 	border-radius:10px;
 	color: #4eb96e;
 	border:1px solid #4eb96e;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+
+.showbtn:hover{
+	color:#74d600;
+	border-color: #74d600;
+	background-color:white;
 }
 
 .subjects{
@@ -152,6 +174,13 @@ body{
 	}	
 }
 
+
+@media (max-width: 1580px) and (min-width: 1150px) {
+	.badgecontainer{
+		width:25%;
+	}
+}
+
 @media (max-width: 420px){
 	.row_grey{
 		visibility: hidden;
@@ -163,6 +192,8 @@ body{
 		font-size:14px;
 	}
 }
+
+
 
 .sort_btns{
 	float:right;
@@ -189,6 +220,16 @@ body{
 	height:40px;
 	background-image: url(backbtn.svg);
 	display:none;
+	opacity:0.7;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+
+.btn_back1:hover{
+	opacity:1;
 }
 
 .fachansicht{
@@ -214,11 +255,165 @@ body{
     background-color:white;
     border: 1px solid black;
     border-radius:300px;
+    margin:auto;
     margin-bottom:10px;
-    
 }
 
 .badgecontainer{
     margin-bottom:50px;
     text-align:center;
+    /*border:1px solid black;*/
+    font-family: Montserrat;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.fachbadges:hover{
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.43);
+	-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.43);
+	box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.43);
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+
+
+.fachbadge_single{
+	float:left;
+    width:250px;
+    height:250px;
+    background-color:white;
+    border: 1px solid black;
+    border-radius:300px;
+}
+
+
+.top_fachbadge{
+	float:left;
+	margin-left: 8%;
+	display:none;
+}
+
+.badgetitle{
+	float:left;
+	margin-left: 30px;
+	margin-top: 20px;
+	font-size:54px;
+	font-family: Montserrat;
+	color:#4eb86d;
+	font-weight: bold;
+}
+
+.badgeteacher{
+	position: absolute;
+	left:270px;
+	top:50px;
+	margin-left: 30px;
+	margin-top: 50px;
+	font-size:16px;
+	font-family: Open Sans;
+	color:#888;
+}
+
+.ausgestellt_am{
+	position: absolute;
+	left:300px;
+	top:160px;
+	color:#888;
+}
+
+
+.ausgestellt_von{
+	position: absolute;
+	left:300px;
+	top:200px;
+	color:#888;
+}
+
+.download{
+	position:relative;
+	top:-80px;
+	margin-left:90%;
+	border-radius:10px;
+	color: #4eb96e;
+	border:1px solid #4eb96e;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+
+.download:hover{
+	color:#74d600;
+	border-color: #74d600;
+	background-color:white;
+}
+
+.überschrift{
+	font-size:18px;
+	font-family: Montserrat;
+}
+
+.desc{
+	margin-top:370px;
+	margin-left:10%;
+	margin-right:10%;
+}
+
+.ausstellungskrit{
+	margin-bottom:80px;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.beschreibung{
+	margin-left:20px;
+	margin-top:20px;
+}
+
+@media (max-width: 840px){
+	.badgetitle{
+		position: relative;
+		float:none;
+		margin:20px 0px 0px 0px;
+		font-size:38px;
+		text-align: center;
+	}
+
+	.badgeteacher{
+		position: relative;
+		float:none;
+		left:-30px;
+		top:0px;
+		text-align: center;
+	}
+
+	.ausgestellt_am{
+		position: relative;
+		float:none;
+		margin:0px;
+		left:0px;
+		top:0px;
+		text-align: center;
+	}
+
+	.ausgestellt_von{
+		position: relative;
+		float:none;
+		margin:0px;
+		left:0px;
+		top:0px;
+		text-align: center;
+	}
+	.download{
+		margin:auto;
+		top:20px;
+	}
+
+	.desc{
+		margin-top:480px;
+	}
 }

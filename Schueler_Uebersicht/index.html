@@ -16,7 +16,7 @@
 <nav class="navbar navbar-default navbar1 navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" id="btn_collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -25,7 +25,7 @@
       <div class="logo">EDGE<b>BADGE</b></div>
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse nav_collapse" id="bs-example-navbar-collapse-1">
       
       <ul class="nav navbar-nav navbar-right">
       <li><div class="name"><img src="glyphicons_003_user.png" class="img-circle icon_small" width="30" height="30" /> Max Mustermann</div></li>
@@ -52,7 +52,7 @@
       <span class="classname">DEUTSCH</span><br />
       <span class="teachername">Herr. Prof. Sattek</span>
       <hr class="classrow">
-      <span class="badgecount">2</span><br />
+      <span class="badgecount">4</span><br />
       <span class="badgegot">Badges earned</span><br />
       <button class="btn btn-default showbtn" data-subject="DEUTSCH" data-teacher="Herr Prof. Sattek">Anzeigen</button>
     </div>
@@ -68,7 +68,7 @@
       <span class="classname">PROJEKTMANAGEMENT</span><br />
       <span class="teachername">Frau. Prof. Bayandor</span>
       <hr class="classrow">
-      <span class="badgecount">2</span><br />
+      <span class="badgecount">0</span><br />
       <span class="badgegot">Badges earned</span><br />
       <button class="btn btn-default showbtn" data-subject="PROJEKTMANAGEMENT" data-teacher="Frau Prof. Bayandor">Anzeigen</button>
     </div>
@@ -76,7 +76,7 @@
       <span class="classname">DEUTSCH</span><br />
       <span class="teachername">Herr. Prof. Sattek</span>
       <hr class="classrow">
-      <span class="badgecount">2</span><br />
+      <span class="badgecount">8</span><br />
       <span class="badgegot">Badges earned</span><br />
       <button class="btn btn-default showbtn" data-subject="DEUTSCH" data-teacher="Herr Prof. Sattek">Anzeigen</button>
     </div>
@@ -84,7 +84,7 @@
       <span class="classname">DEUTSCH</span><br />
       <span class="teachername">Herr. Prof. Sattek</span>
       <hr class="classrow">
-      <span class="badgecount">2</span><br />
+      <span class="badgecount">10</span><br />
       <span class="badgegot">Badges earned</span><br />
       <button class="btn btn-default showbtn" data-subject="DEUTSCH" data-teacher="Herr Prof. Sattek">Anzeigen</button>
     </div>
@@ -92,7 +92,7 @@
       <span class="classname">DEUTSCH</span><br />
       <span class="teachername">Herr. Prof. Sattek</span>
       <hr class="classrow">
-      <span class="badgecount">2</span><br />
+      <span class="badgecount">12</span><br />
       <span class="badgegot">Badges earned</span><br />
       <button class="btn btn-default showbtn" data-subject="DEUTSCH" data-teacher="Herr Prof. Sattek">Anzeigen</button>
     </div>
@@ -100,7 +100,7 @@
       <span class="classname">DEUTSCH</span><br />
       <span class="teachername">Herr. Prof. Sattek</span>
       <hr class="classrow">
-      <span class="badgecount">2</span><br />
+      <span class="badgecount">14</span><br />
       <span class="badgegot">Badges earned</span><br />
       <button class="btn btn-default showbtn" data-subject="DEUTSCH" data-teacher="Herr Prof. Sattek">Anzeigen</button>
     </div>
@@ -108,7 +108,7 @@
       <span class="classname">DEUTSCH</span><br />
       <span class="teachername">Herr. Prof. Sattek</span>
       <hr class="classrow">
-      <span class="badgecount">2</span><br />
+      <span class="badgecount">16</span><br />
       <span class="badgegot">Badges earned</span><br />
       <button class="btn btn-default showbtn" data-subject="DEUTSCH" data-teacher="Herr Prof. Sattek">Anzeigen</button>
     </div>
@@ -117,8 +117,85 @@
 
 
 <div class="container-fluid fachansicht">
-    <div class="badgecontainer col-xs-6 col-sm-6 col-md-4 col-lg-3"><div class="fachbadges"></div>Faust-Badge</div> <div class="badgecontainer col-xs-6 col-sm-6 col-md-4 col-lg-3"><div class="fachbadges"></div>Faust-Badge</div> <div class="badgecontainer col-xs-6 col-sm-6 col-md-4 col-lg-3"><div class="fachbadges"></div>Faust-Badge</div> <div class="badgecontainer col-xs-6 col-sm-6 col-md-4 col-lg-3"><div class="fachbadges"></div>Faust-Badge</div> <div class="badgecontainer col-xs-6 col-sm-6 col-md-4 col-lg-3"><div class="fachbadges"></div>Faust-Badge</div> <div class="badgecontainer col-xs-6 col-sm-6 col-md-4 col-lg-3"><div class="fachbadges"></div>Faust-Badge</div> <div class="badgecontainer col-xs-6 col-sm-6 col-md-4 col-lg-3"><div class="fachbadges"></div>Faust-Badge</div> <div class="badgecontainer col-xs-6 col-sm-6 col-md-4 col-lg-3"><div class="fachbadges"></div>Faust-Badge</div> <div class="badgecontainer col-xs-6 col-sm-6 col-md-4 col-lg-3"><div class="fachbadges"></div>Faust-Badge</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
+    <div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2"><div class="fachbadges" data-badgename="TESTBADGE" data-date="12.12.2012"></div>TESTBADGE</div>
 
+</div>
+
+
+
+<div class="container-fluid badge_einzelansicht">
+  <div class="top_fachbadge col-xs-10">
+    <span class="fachbadge_single"></span>
+    <span class="badgetitle"></span><br />
+    <span class="badgeteacher"></span><br />
+    <span class="ausgestellt_am">Ausgestellt am:</span><br />
+    <span class="ausgestellt_von">Ausgestellt von:</span><br />
+    <button type="button" class="btn btn-default download">Download</button>
+  </div>
+
+<div class="desc">
+  <span class="überschrift">AUSSTELLUNGSKRITERIUM</span><br />
+
+  <div class="ausstellungskrit">
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+  sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+  voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+  sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+  voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+  sanctus est Lorem ipsum dolor sit amet.
+  </div>
+
+  <span class="überschrift">BESCHREIBUNG</span><br />
+
+  <div class="beschreibung">
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+  sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+  voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+  sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+  voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+  sanctus est Lorem ipsum dolor sit amet.
+  </div>
+
+
+</div>
+
+</div>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
 </body>
