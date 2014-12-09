@@ -20,6 +20,12 @@ body{font-family: 'Open Sans'; }
 	text-transform: uppercase;
     margin-top: 15vh;
 }
+.footer_logo{
+    font-family: 'Montserrat';
+	font-size: 40px;
+	text-transform: uppercase;
+    margin-top: 0vh;
+}
 .bold{
 	font-weight: bold;
 }
@@ -36,7 +42,7 @@ body{font-family: 'Open Sans'; }
    font-size: 12px;
     }
 .header{
-	min-height: 90vh;
+	min-height: 80vh;
 	background: 
     linear-gradient(
       rgba(30, 80, 30, 0.8), 
