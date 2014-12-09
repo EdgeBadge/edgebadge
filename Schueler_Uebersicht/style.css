@@ -4,6 +4,7 @@ body{
 
 .logo{
 	position:relative;
+    padding-left:20px;
 	padding-top:20px;
 	padding-bottom:20px;
 	font-family: Montserrat;
@@ -182,7 +183,7 @@ body{
 	position: relative;
 	border-radius: 50px;
 	margin-right:5px;
-	bottom:8px;
+	top:13px;
 	border:0px;
 	width:40px;
 	height:40px;
@@ -194,4 +195,30 @@ body{
 	display:none;
 	margin-left:10%;
 	margin-right:10%;
+}
+
+.subjectteacher{
+	position: relative;
+	left:47px;
+	display:none;
+	font-size:14px;
+	color:#aaa;
+	font-weight:normal;
+	font-family:open sans;
+}
+
+
+.fachbadges{
+    width:150px;
+    height:150px;
+    background-color:white;
+    border: 1px solid black;
+    border-radius:300px;
+    margin-bottom:10px;
+    
+}
+
+.badgecontainer{
+    margin-bottom:50px;
+    text-align:center;
 }
