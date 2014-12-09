@@ -29,10 +29,10 @@
           <div class="user_name">Max Mustermann</div>
         </div>
         <ul class="sidebar-nav list-unstyled">
-          <li><a href="#"><span class="glyphicon glyphicon-home"></span>DASHBOARD</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-file"></span>BADGE ERSTELLEN</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-send"></span>BADGE AUSSTELLEN</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-cog"></span>PROFIL BEARBEITEN</a></li>
+          <li><a href="#" class="dashboard"><span class="glyphicon glyphicon-home"></span>DASHBOARD</a></li>
+          <li><a href="#" class="badge_erstellen"><span class="glyphicon glyphicon-file"></span>BADGE ERSTELLEN</a></li>
+          <li><a href="#" class="badge_ausstellen"><span class="glyphicon glyphicon-send"></span>BADGE AUSSTELLEN</a></li>
+          <li><a href="#" class="profil_bearbeiten"><span class="glyphicon glyphicon-cog"></span>PROFIL BEARBEITEN</a></li>
         </ul>
       </div>
       <!-- /#sidebar-wrapper -->
@@ -43,10 +43,10 @@
           <li><div class="logo">EDGE<span class="bold">BADGE</span></div></li>
         </ul>
         <ul class="nav navbar-nav">
-          <li><a href="#"><span class="glyphicon glyphicon-home"></span>DASHBOARD</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-file"></span>BADGE ERSTELLEN</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-send"></span>BADGE AUSSTELLEN</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-cog"></span>PROFIL BEARBEITEN</a></li>
+          <li><a href="#" class="dashboard"><span class="glyphicon glyphicon-home"></span>DASHBOARD</a></li>
+          <li><a href="#" class="badge_erstellen"><span class="glyphicon glyphicon-file"></span>BADGE ERSTELLEN</a></li>
+          <li><a href="#" class="badge_ausstellen"><span class="glyphicon glyphicon-send"></span>BADGE AUSSTELLEN</a></li>
+          <li><a href="#" class="profil_bearbeiten"><span class="glyphicon glyphicon-cog"></span>PROFIL BEARBEITEN</a></li>
         </ul>
       </div>
       <!-- /#navbar_mobiile -->
@@ -102,6 +102,33 @@
             <img src="badge.png" width="100" />
           </div></div>
         </div>
+
+        <div id="div_badge_erstellen">
+          <div class="row">
+            <textarea class="form-control" id="ta_badge_name" placeholder="Geben Sie denn Badgename ein..."></textarea>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdown_Fach" data-toggle="dropdown" aria-expanded="true">
+                  Unterrichtsfach <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown_Fach">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fach1</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fach2</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fach3</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fach4</a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="row">
+            <div id="div_description">
+              Beschreibung:
+              <textarea class="form-control" id="ta_description"></textarea>
+            </div>
+            <div id="div_requirement">
+              Ausstellungskriterium:
+              <textarea class="form-control" id="ta_requirement"></textarea>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- /#page-content-wrapper -->
     </div>
@@ -110,6 +137,7 @@
     <!-- JQuery -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script>
     $(document).ready(function() {
       $("#menu-toggle").click(function(e) {
@@ -126,8 +154,25 @@
           $('.switch').css('padding', '50px 30px 0px 30px');
           $('#switch-list').removeClass('list-styled');
           $('#switch-list').addClass('list-inline');
-
         }
+      });
+      $('.dashboard').click(function() {
+        $("#wrapper").toggleClass("toggled");
+        $('body').css('background-color', '#FFF');
+        $('h1').text('Dashboard');
+        $('p').css('display', 'block');
+        $('.switch').css('display', 'block');
+        $('.overview').css('display', 'block');
+        $('#div_badge_erstellen').css('display', 'none');
+      });
+      $('.badge_erstellen').click(function() {
+        $("#wrapper").toggleClass("toggled");
+        $('body').css('background-color', '#FFF');
+        $('h1').text('Badge erstellen');
+        $('p').css('display', 'none');
+        $('.switch').css('display', 'none');
+        $('.overview').css('display', 'none');
+        $('#div_badge_erstellen').css('display', 'block');
       });
     });
     </script>
