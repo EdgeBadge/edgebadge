@@ -2,6 +2,9 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: #EDF3F4;
 }
+.ui-loader{
+    display: none;
+}
 
 #sidebar-wrapper {
     z-index: 1000;
@@ -146,37 +149,41 @@ h1{
 #ta_badge_name{
     float: left;
     width: 300px;
-    max-height: 40px;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
+    max-height: 27px;
+    padding: 0px;
+    margin-bottom: 30px;
+    margin-right: 250px;
     background-color: transparent;
     border: 0px;
-    border-bottom: 3px solid #1BA39C;
+    border-bottom: 2px solid #1BA39C;
     border-radius: 0px;
     font-size: 16px;
     resize: none;
 }
 .dropdown{
     float: left;
-    margin-left: 100px;
     margin-top: 3px;
 }
 #div_description{
     float: left;
-    width: 300px;
+    width: 350px;
+    margin-top: 30px;
+    margin-right: 200px;
 }
 #div_requirement{
     float: left;
-    width: 300px;
-    margin-left: 100px;
+    margin-top: 30px;
+    width: 350px;
 }
 #ta_description{
-    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
     width: 100%;
     resize: none;
 }
 #ta_requirement{
-    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
     width: 100%;
     resize: none;
 }
@@ -216,15 +223,28 @@ h1{
     }
     #ta_badge_name{
         font-size: 12px;
+        max-height: 20px;   
+        margin-right: 0px;
     }
     .dropdown{
-        margin-top: 0px;
         margin-left: 50px;
     }
     #wrapper.toggled .nav {
         display: block;
     }
+    #div_description{
+       width: 250px;
+       margin-right: 50px;
+    }
     #div_requirement{
-        margin-left: 0px;
+       width: 250px;
+    }
+    #ta_description{
+        min-height: 50px;
+        max-height: 50px;
+    }
+    #ta_requirement{
+        min-height: 50px;
+        max-height: 50px;
     }
 }
