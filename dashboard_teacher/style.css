@@ -164,6 +164,9 @@ h1{
     float: left;
     margin-top: 3px;
 }
+#dropdown_Fach{
+    border: 1px solid #1BA39C;
+}
 #div_description{
     float: left;
     width: 350px;
@@ -173,6 +176,7 @@ h1{
 #div_requirement{
     float: left;
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 350px;
 }
 #ta_description{
@@ -180,15 +184,46 @@ h1{
     max-height: 100px;
     width: 100%;
     resize: none;
+    border: 1px solid #1BA39C;
 }
 #ta_requirement{
     min-height: 100px;
     max-height: 100px;
     width: 100%;
     resize: none;
+    border: 1px solid #1BA39C;
+}
+.badge_choice{
+    margin-top: 30px;
+    width: 100%;
+    min-height: 300px;   
+    background-color: #EDF3F4;
+}
+.badge_template{
+    float: left;
+    width: 60%;
+    min-height: 300px;
+    padding: 2% 4%;
+    border-right: 1px solid #1BA39C;
+}
+.badge_selected{
+    float: left;
+    width: 40%;
+    min-height: 300px;
+    padding: 4%;
+    margin: auto;
+}
+@media(max-width:992px) {
+    .badge_template{
+        width: 100%;
+        border-right: 0px;
+    }
+    .badge_selected{
+        display: none;
+    }
 }
 
-@media(max-width:750px) {
+@media(max-width:798px) {
     .navbar{
         display: inline;
     }
@@ -228,6 +263,7 @@ h1{
     }
     .dropdown{
         margin-left: 50px;
+        margin-top: -5px;
     }
     #wrapper.toggled .nav {
         display: block;
