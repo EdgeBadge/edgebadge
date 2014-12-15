@@ -3,7 +3,7 @@ $(document).ready(function() {
     	var subject = $(this).attr('data-subject') + "";
     	var teacher = $(this).attr('data-teacher') + "";
         $('.subjects').css('margin-left','10%');
-    	$('.fachbox').css('display', 'none');
+    	$('.boxes').css('display', 'none');
     	$('.subjects').html('<button class="btn_back1"></button>' + subject + "<br /> <span class='subjectteacher'></span>");
     	$('.btn_back1').css('display','block');
     	$('.btn_back1').css('float','left');
@@ -28,11 +28,11 @@ $(document).ready(function() {
             $('.badgeteacher').text(subject);
             $('.ausgestellt_am').text('Ausgestellt am: ' + datum);
             $('.ausgestellt_von').text('Ausgestellt von: ' + teacher);
-
+            $('.desc').css('display','block');
 
             $('.btn_back1').click(function(){
                 $('.subjects').css('margin-left','10%');
-                $('.fachbox').css('display', 'none');
+                $('.boxes').css('display', 'none');
                 $('.subjects').html('<button class="btn_back1"></button>' + subject + "<br /> <span class='subjectteacher'></span>");
                 $('.btn_back1').css('display','block');
                 $('.btn_back1').css('float','left');
@@ -41,11 +41,12 @@ $(document).ready(function() {
                 $('.subjectteacher').text(teacher);
                 $('.subjectteacher').css('display','block');
                 $('.top_fachbadge').css('display','none');
+                $('.desc').css('display','none');
 
                 $('.btn_back1').click(function(){
                     $('.subjects').html('<div class="subjects"> MEINE FÄCHER <div class="sort_btns"> <button class="sort1">A</button><button class="sort2">B</button></div></div');
                     $('.fachansicht').css('display','none');
-                    $('.fachbox').css('display', 'block');
+                    $('.boxes').css('display', 'block');
                     $('.subjectteacher').css('display','none');
                     $('.subjects').css('margin-left','5%');
                     $('.top_fachbadge').css('display','none');
@@ -57,7 +58,7 @@ $(document).ready(function() {
         $('.btn_back1').click(function(){
             $('.subjects').html('<div class="subjects"> MEINE FÄCHER <div class="sort_btns"> <button class="sort1">A</button><button class="sort2">B</button></div></div');
             $('.fachansicht').css('display','none');
-            $('.fachbox').css('display', 'block');
+            $('.boxes').css('display', 'block');
             $('.subjectteacher').css('display','none');
             $('.subjects').css('margin-left','5%');
              $('.top_fachbadge').css('display','none');

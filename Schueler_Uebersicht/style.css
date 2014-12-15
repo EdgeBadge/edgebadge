@@ -4,12 +4,10 @@ body{
 
 .logo{
 	position:relative;
-    padding-left:20px;
-	padding-top:20px;
-	padding-bottom:20px;
 	font-family: Montserrat;
 	font-size:30px;
 	font-weight:400;
+	color:black;
 }
 
 .logo > b{
@@ -20,9 +18,10 @@ body{
 .name{
 	position:relative;
 	text-align: center;
-	top:30px;
 	margin-right:25px;
+	top:11px;
 }
+
 .icon_small{
 	margin-right:20px;
 	border:1px solid #4eb96e;
@@ -30,11 +29,11 @@ body{
 
 .abmelden{
 	position:relative;
-	top:27px;
 	border-radius:10px;
 	color: #4eb96e;
 	border:1px solid #4eb96e;
 	margin-right:15px;
+	top:8px;
 	-webkit-transition: all 200ms ease-in;
 	-moz-transition: all 200ms ease-in;
 	-ms-transition: all 200ms ease-in;
@@ -45,7 +44,7 @@ body{
 .abmelden:hover{
 	color:#74d600;
 	border-color: #74d600;
-	background-color:white;
+	background-color:#F5FFF5;
 }
 
 .head_row{
@@ -74,8 +73,14 @@ body{
 	background-color: white;
 	border:0px;
 	border-bottom: 2px solid green;
+	padding-top:18px;
 }
 
+.navus{padding-bottom:20px;}
+
+.btn_collapse{
+	top:0px;
+}
 
 .fachbox{
 	height:250pt;
@@ -144,7 +149,7 @@ body{
 .showbtn:hover{
 	color:#74d600;
 	border-color: #74d600;
-	background-color:white;
+	background-color:#F5FFF5;
 }
 
 .subjects{
@@ -166,34 +171,6 @@ body{
 	background-color:white;
 	margin-left:6.5%;
 }
-
-
-@media (max-width: 1580px) and (min-width: 980px) {
-	.fachbox{
-		width:26%;
-	}	
-}
-
-
-@media (max-width: 1580px) and (min-width: 1150px) {
-	.badgecontainer{
-		width:25%;
-	}
-}
-
-@media (max-width: 420px){
-	.row_grey{
-		visibility: hidden;
-	}
-	.classname{
-		font-size:14px;
-	}
-	.teachername{
-		font-size:14px;
-	}
-}
-
-
 
 .sort_btns{
 	float:right;
@@ -257,6 +234,11 @@ body{
     border-radius:300px;
     margin:auto;
     margin-bottom:10px;
+    -webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
 }
 
 .badgecontainer{
@@ -272,11 +254,6 @@ body{
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.43);
 	-moz-box-shadow:    0px 0px 15px 0px rgba(50, 50, 50, 0.43);
 	box-shadow:         0px 0px 15px 0px rgba(50, 50, 50, 0.43);
-	-webkit-transition: all 200ms ease-in;
-	-moz-transition: all 200ms ease-in;
-	-ms-transition: all 200ms ease-in;
-	-o-transition: all 200ms ease-in;
-	transition: all 200ms ease-in;
 }
 
 
@@ -349,8 +326,9 @@ body{
 .download:hover{
 	color:#74d600;
 	border-color: #74d600;
-	background-color:white;
+	background-color:#F5FFF5;
 }
+
 
 .überschrift{
 	font-size:18px;
@@ -372,6 +350,35 @@ body{
 .beschreibung{
 	margin-left:20px;
 	margin-top:20px;
+}
+
+.desc{
+	display:none;
+}
+
+@media (max-width: 1580px) and (min-width: 980px) {
+	.fachbox{
+		width:26%;
+	}	
+}
+
+
+@media (max-width: 1580px) and (min-width: 1150px) {
+	.badgecontainer{
+		width:25%;
+	}
+}
+
+@media (max-width: 420px){
+	.row_grey{
+		visibility: hidden;
+	}
+	.classname{
+		font-size:14px;
+	}
+	.teachername{
+		font-size:14px;
+	}
 }
 
 @media (max-width: 840px){
@@ -440,10 +447,36 @@ body{
 	.badge_desc{
 		margin-left:10%;
 	}
+    
+    
 }
 
 @media (max-width: 350px){
 	.badge_desc{
-		margin-left:0%;
+		margin-left:3%;
+	}
+    .fachbadge_single{
+        width:200px;
+        height:200px;
+    }
+    
+    .logo{
+        font-size:  27px; 
+    }
+}
+
+@media (max-width: 767px){
+	.name{
+		margin-top:20px;
+	}
+	.abmelden{
+		margin-top:12px;
+		margin-bottom: 10px;
+		margin-left:41%;
+	}
+
+	.nav_collapse{
+		background-color:#eff;
 	}
 }
+
