@@ -130,6 +130,71 @@ body{
     background-color: #EDF3F4;
 }
 
+.fachbox{
+    height: 300px;
+    text-align: center;
+    margin-bottom: 25px;
+    border:1px solid #aaa;
+    border-radius:15px;
+    background-color: #FFF;
+}
+
+.classname{
+    font-weight: bold;
+    position: relative;
+    top:25px;
+    font-family: Montserrat;
+    font-size:18px;
+}
+
+.classrow{
+    position: relative;
+    top:20px;
+    width:75%;
+    height:1px;
+    color:#ccc;
+    background-color: #ccc;
+}
+
+.badgecount{
+    position: relative;
+    top: 10px;
+    font-family:Montserrat;
+    font-size:72px;
+    font-weight:bold;
+    color:#4eb96e;
+}
+
+.badgegot{
+    position: relative;
+    top: 10px;
+    font-family:Montserrat;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.showbtn{
+    position: relative;
+    font-family: Open Sans;
+    top: 40px;
+    width:150px;
+    height:36px;
+    border-radius:10px;
+    color: #4eb96e;
+    border:1px solid #4eb96e;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+.showbtn:hover{
+    color:#74d600;
+    border-color: #74d600;
+    background-color:white;
+}
+
 .panel-default{
     box-shadow: none;
     padding: 10px 0px;
@@ -203,23 +268,22 @@ h1{
     float: left;
     width: 60%;
     min-height: 300px;
-    padding: 2% 4%;
+    padding: 10px 0px;
     border-right: 1px solid #1BA39C;
 }
 .badge_selected{
     float: left;
     width: 40%;
-    min-height: 300px;
-    padding: 4%;
+    height: 100%;
     margin: auto;
 }
 @media(max-width:992px) {
     .badge_template{
         width: 100%;
         border-right: 0px;
+        border-bottom: 1px solid #1BA39C;
     }
     .badge_selected{
-        display: none;
     }
 }
 
