@@ -379,7 +379,7 @@ body{
 		position: relative;
 		float:none;
 		margin:20px 0px 0px 0px;
-		font-size:38px;
+		font-size:32px;
 		text-align: center;
 	}
 
@@ -415,5 +415,35 @@ body{
 
 	.desc{
 		margin-top:480px;
+	}
+
+	.fachbadge_single{
+		margin-right:7%;
+	}
+
+	.badge_einzelansicht{
+		margin-left:-9%;
+	}
+
+	.badge_desc{
+		margin-left:30%;
+	}
+}
+
+@media (max-width: 610px){
+	.badge_desc{
+		margin-left:20%;
+	}
+}
+
+@media (max-width: 450px){
+	.badge_desc{
+		margin-left:10%;
+	}
+}
+
+@media (max-width: 350px){
+	.badge_desc{
+		margin-left:0%;
 	}
 }
