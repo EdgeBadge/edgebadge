@@ -44,7 +44,7 @@ $(document).ready(function() {
                 $('.desc').css('display','none');
 
                 $('.btn_back1').click(function(){
-                    $('.subjects').html('<div class="subjects"> MEINE FÄCHER <div class="sort_btns"> <button class="sort1">A</button><button class="sort2">B</button></div></div');
+                    $('.subjects').html('<div class="subjects"> MEINE FÄCHER <div class="sort_btns"> <button class="sort1">Aa</button><button class="sort2 glyphicon glyphicon-calendar"></button></div></div');
                     $('.fachansicht').css('display','none');
                     $('.boxes').css('display', 'block');
                     $('.subjectteacher').css('display','none');
@@ -56,7 +56,7 @@ $(document).ready(function() {
         });
 
         $('.btn_back1').click(function(){
-            $('.subjects').html('<div class="subjects"> MEINE FÄCHER <div class="sort_btns"> <button class="sort1">A</button><button class="sort2">B</button></div></div');
+            $('.subjects').html('<div class="subjects"> MEINE FÄCHER <div class="sort_btns"> <button class="sort1">Aa</button><button class="sort2 glyphicon glyphicon-calendar"></button></div></div');
             $('.fachansicht').css('display','none');
             $('.boxes').css('display', 'block');
             $('.subjectteacher').css('display','none');
