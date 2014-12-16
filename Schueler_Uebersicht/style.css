@@ -1,6 +1,4 @@
-body{
-	background-color:#f6f7f7;
-}
+body{background-color:#f6f7f7;}
 
 .logo{
 	position:relative;
@@ -10,10 +8,7 @@ body{
 	color:black;
 }
 
-.logo > b{
-	font-weight:900;
-
-}
+.logo > b{font-weight:900;}
 
 .name{
 	position:relative;
@@ -57,9 +52,7 @@ body{
 	background-color: green;
 }
 
-.collapsed{
-	top:15px;
-}
+.collapsed{top:15px;}
 
 .main{
 	position: absolute;
@@ -78,9 +71,7 @@ body{
 
 .navus{padding-bottom:20px;}
 
-.btn_collapse{
-	top:0px;
-}
+.btn_collapse{top:0px;}
 
 .fachbox{
 	height:250pt;
@@ -94,7 +85,7 @@ body{
 	position: relative;
 	top:25px;
 	font-family: Montserrat;
-	font-size:18px;
+	font-size:16px;
 }
 
 .teachername{
@@ -205,9 +196,7 @@ body{
 	transition: all 200ms ease-in;
 }
 
-.btn_back1:hover{
-	opacity:1;
-}
+.btn_back1:hover{opacity:1;}
 
 .fachansicht{
 	display:none;
@@ -253,10 +242,7 @@ body{
 	transition: all 200ms ease-in;
 }
 
-.badgeimg:hover{
-	transform:scale(1.15);
-}
-
+.badgeimg:hover{transform:scale(1.15);}
 
 .fachbadge_single{
 	float:left;
@@ -266,7 +252,6 @@ body{
     border: 0px;
     border-radius:300px;
 }
-
 
 .top_fachbadge{
 	float:left;
@@ -353,40 +338,27 @@ body{
 	margin-top:20px;
 }
 
-.desc{
-	display:none;
-}
+.desc{display:none;}
 
 @media (max-width: 1580px) and (min-width: 980px) {
 	.fachbox{
 		width:26%;
 	}	
 }
-
-
 @media (max-width: 1580px) and (min-width: 1150px) {
-	.badgecontainer{
-		width:25%;
-	}
+	.badgecontainer{width:25%;}
 }
-
 @media (max-width: 420px){
-	.row_grey{
-		visibility: hidden;
-	}
-	.classname{
-		font-size:13px;
-	}
-	.teachername{
-		font-size:14px;
-	}
+	.row_grey{visibility: hidden;}
+	.classname{font-size:13px;}
+	.teachername{font-size:14px;}
 }
-
-@media (max-width: 840px){
+@media (max-width: 1200px){
 	.badgetitle{
 		position: relative;
 		float:none;
-		margin:20px 0px 0px 0px;
+		margin:0px 0px 0px 0px;
+		top:8px;
 		font-size:32px;
 		text-align: center;
 	}
@@ -420,63 +392,41 @@ body{
 		margin:auto;
 		top:20px;
 	}
-
-	.desc{
-		margin-top:480px;
-	}
-
+	.desc{margin-top:480px;}
 	.fachbadge_single{
-		margin-right:7%;
-	}
-
-	.badge_einzelansicht{
-		margin-left:-9%;
-	}
-
-	.badge_desc{
-		margin-left:30%;
+		width:100%;
+		margin-right:7%;}
+	.badge_einzelansicht{margin-left:-9%;}
+	.badge_desc{margin-left:30%;}
 	}
 }
-
 @media (max-width: 610px){
-	.badge_desc{
-		margin-left:20%;
-	}
+	.badge_desc{margin-left:20%;}
 }
-
 @media (max-width: 450px){
-	.badge_desc{
-		margin-left:10%;
-	}
+	.badge_desc{margin-left:10%;}
     
 }
-
 @media (max-width: 350px){
-	.badge_desc{
-		margin-left:3%;
-	}
+	.badge_desc{margin-left:3%;}
     .fachbadge_single{
         width:200px;
         height:200px;
     }
-    
-    .logo{
-        font-size:  27px; 
-    }
+    .badgetitle{top:60px;}
+    .badgeteacher{top:52px;}
+	.ausgestellt_am{top:52px;}
+	.ausgestellt_von{top:52px;}
+	.download{top:62px;}
+    .logo{font-size:  27px;}
 }
-
 @media (max-width: 767px){
-	.name{
-		margin-top:20px;
-	}
+	.name{margin-top:20px;}
 	.abmelden{
 		margin-top:12px;
 		margin-bottom: 10px;
 		margin-left:41%;
 	}
-
-	.nav_collapse{
-		background-color:#eff;
-	}
+	.nav_collapse{background-color:#eff;}
 }
 

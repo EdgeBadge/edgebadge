@@ -13,9 +13,10 @@ $(document).ready(function() {
     	$('.subjectteacher').css('display','block');
         
 
-        $('.fachbadges').click(function(){
+        $('.badgeimg').click(function(){
             var name = $(this).attr('data-badgename') + "";
             var datum = $(this).attr('data-date') + "";
+            var source = $(this).attr('src');
             $('.subjects').html('<button class="btn_back1"></button>' + subject);
             $('.btn_back1').css('display','block');
             $('.btn_back1').css('float','left');
@@ -29,6 +30,8 @@ $(document).ready(function() {
             $('.ausgestellt_am').text('Ausgestellt am: ' + datum);
             $('.ausgestellt_von').text('Ausgestellt von: ' + teacher);
             $('.desc').css('display','block');
+            $('.badgeimg_gross').attr('src', source);
+            
 
             $('.btn_back1').click(function(){
                 $('.subjects').css('margin-left','10%');
