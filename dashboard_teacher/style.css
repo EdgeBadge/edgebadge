@@ -212,14 +212,24 @@ body{
 .panel-default{
     box-shadow: none;
     padding: 10px 0px;
+}
+.panel_select{
     -webkit-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
     -ms-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
 }
-.panel-default:hover{
+.panel_select:hover{
     transform: scale(1.1);
+}
+#checked_badge{
+    position: absolute;
+    top: 10px;
+    left: 60%;
+    width: 25px;
+    height: 25px;
+    background-image: url(checked.png);
 }
 
 h1{
@@ -301,6 +311,24 @@ h1{
     margin-top: 50px;
 }
 #btn_next_create_badge{
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #1BA39C;
+    color: #FFF;
+}
+#div_badge_ausstellen{
+    position: relative;
+    width: 100%;
+    padding: 20px 30px;
+    display: none;
+}
+.badge_auswahl_ausstellen{
+    margin-top: 30px;
+    width: 100%;
+    min-height: 300px;
+}
+#btn_next_send_badge{
     float: right;
     margin-top: 30px;
     margin-bottom: 30px;
