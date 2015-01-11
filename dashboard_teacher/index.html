@@ -189,7 +189,7 @@
 
         <div id="div_badge_erstellen">
           <div class="row">
-            <textarea class="form-control" id="ta_badge_name" placeholder="Geben Sie den Badgenamen ein..."></textarea>
+            <input type="text" class="form-control" id="ta_badge_name" placeholder="Geben Sie den Badgenamen ein...">
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdown_Fach" data-toggle="dropdown" aria-expanded="true">
                   Unterrichtsfach <span class="caret"></span>
@@ -290,6 +290,21 @@
 		          </div></div>		              
 	        </div>
 	        <button id="btn_next_send_badge" class="btn">Weiter</button>
+	        <div class="row div_badge_auswahl_search">
+	        	<div class="row switch_student_class">
+          		<ul id="switch-list" class="list-inline">
+            		<li><a class="btn" id="btn_search_student" href="#">SCH&Uuml;LER</a></li>
+            		<li><a class="btn" id="btn_search_class" href="#">KLASSE</a></li>
+          		</ul>
+        		</div>
+        		<div class="row">
+        		<input type="text" class="form-control" id="ta_search" placeholder="Max Mustermann">
+        		</div>
+        		<div class="row div_selected_student_class">
+        			Ausgew&auml;hlte Sch&uuml;ler/Klassen
+        		</div>
+        		<button id="btn_send_badge" class="btn">Ausstellen</button>
+	        </div>
         </div>
       </div>
       <!-- /#page-content-wrapper -->
@@ -378,13 +393,19 @@
       	$(this).append('<img src="checked.png" id="checked_badge" />');
       });
       $('.panel_auswahl_ausstellen').click(function() {
-        if($(this).hasClass('taken')){
-        	console.log('XD');
-        	$('#checked_badge').remove();
-        }      	      	
-      	$(this).append('<img src="checked.png" id="checked_badge" />');
-      	$(this).addClass('taken');
+      	if($(this).hasClass('taken')){
 
+      	} 	      	
+      	$(this).append('<img src="checked.png" id="checked_badge" />');
+      	$(this).addClass('taken');      	
+      });
+      $('#btn_next_send_badge').click(function() {    	      	
+      	if($('.panel_auswahl_ausstellen').hasClass('taken')){
+      		$('#div_badge_ausstellen p').text('Suchen Sie nach einem Schüler oder einer Klasse.')
+      		$('.badge_auswahl_ausstellen').css('display', 'none');
+      		$('#btn_next_send_badge').css('display', 'none');
+      		$('.div_badge_auswahl_search').css('display', 'block');
+      	}
       });
     });
     </script>

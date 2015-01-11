@@ -328,12 +328,36 @@ h1{
     width: 100%;
     min-height: 300px;
 }
+.div_badge_auswahl_search{
+    position: relative;
+    width: 100%;
+    display: none;
+}
+.switch_student_class{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #FFF;
+}
+#ta_search{
+    width: 60%;
+}
+.div_selected_student_class{
+    margin-top: 10px;
+    font-size: 12pt;
+}
 #btn_next_send_badge{
     float: right;
     margin-top: 30px;
     margin-bottom: 30px;
     background-color: #1BA39C;
     color: #FFF;
+}
+#btn_send_badge{
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #1BA39C;
+    color: #FFF;   
 }
 @media(max-width:992px) {
     .badge_template{
@@ -411,5 +435,8 @@ h1{
     #ta_requirement{
         min-height: 50px;
         max-height: 50px;
+    }
+    #ta_search{
+        width: 100%;
     }
 }
