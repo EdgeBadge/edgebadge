@@ -210,12 +210,12 @@ body{
 }
 .checked_badge{
     position: absolute;
-    top: 10px;
+    top: 25px;
     left: 70%;
     width: 25px;
     height: 25px;
     display: none;
-    background-image: url(checked.png);
+    background-image: url(images/checked.png);
 }
 h1{
     font-size: 26px;
@@ -286,11 +286,17 @@ h1{
     float: left;
     width: 100%;
     min-height: 300px;
-    padding: 15px 5px;
+    padding: 0px 5px;
+    padding-bottom: 20px;
+}
+.panel.panel-default.panel_select {
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 .badge_selected{
+    display: none;
 	padding-top: 20px;
-  float: left;
+    float: left;
 }
 #btn_next_create_badge{
     float: right;
