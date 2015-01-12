@@ -196,11 +196,6 @@ body{
     border-radius:10px;
     color: #4eb96e;
     border:1px solid #4eb96e;
-    -webkit-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    -ms-transition: all 200ms ease-in;
-    -o-transition: all 200ms ease-in;
-    transition: all 200ms ease-in;
 }
 
 .showbtn:hover{
@@ -213,25 +208,15 @@ body{
     box-shadow: none;
     padding: 10px 0px;
 }
-.panel_select{
-    -webkit-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
-    -ms-transition: all 200ms ease-in;
-    -o-transition: all 200ms ease-in;
-    transition: all 200ms ease-in;
-}
-.panel_select:hover{
-    transform: scale(1.1);
-}
-#checked_badge{
+.checked_badge{
     position: absolute;
     top: 10px;
-    left: 60%;
+    left: 70%;
     width: 25px;
     height: 25px;
+    display: none;
     background-image: url(checked.png);
 }
-
 h1{
     font-size: 26px;
     margin-top: 0px;
@@ -299,16 +284,13 @@ h1{
 }
 .badge_template{
     float: left;
-    width: 60%;
+    width: 100%;
     min-height: 300px;
     padding: 15px 5px;
-    border-right: 1px solid #1BA39C;
 }
 .badge_selected{
-    float: left;
-    width: 40%;
-    padding: 15px 5px;
-    margin-top: 50px;
+	padding-top: 20px;
+  float: left;
 }
 #btn_next_create_badge{
     float: right;
@@ -323,6 +305,9 @@ h1{
     padding: 20px 30px;
     display: none;
 }
+.panel_auswahl_ausstellen{
+	height: 180px;
+}
 .badge_auswahl_ausstellen{
     margin-top: 30px;
     width: 100%;
@@ -333,7 +318,7 @@ h1{
     width: 100%;
     display: none;
 }
-.switch_student_class{
+.div_switch_student_class{
     width: 100%;
     margin-top: 20px;
     background-color: #FFF;
@@ -362,12 +347,9 @@ h1{
 @media(max-width:992px) {
     .badge_template{
         width: 100%;
-        border-right: 0px;
-        border-bottom: 1px solid #1BA39C;
     }
     .badge_selected{
         width: 100%;
-        margin-top: 25px;
     }
 }
 
