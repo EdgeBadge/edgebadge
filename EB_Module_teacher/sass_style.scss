@@ -1,0 +1,69 @@
+$eb-primary-font: 'Open Sans', sans-serif;
+$eb-primary-color: #1BA39C;
+
+body{
+    font-family: $eb-primary-font;
+}
+#sidebar-wrapper {    
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    color: #fff;
+    background: $eb-primary-color;
+    z-index: 1000;
+}
+.logo{    
+    width: 300px;
+    margin-top: 25px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 26pt;
+    text-transform: uppercase;
+}
+.bold{
+    font-weight: 900;
+}
+.profil_pic{
+    margin-top: 50px;
+    margin-left: 90px;
+    width: 120px;
+    height: 120px;
+}
+.user_name{
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+}
+.sidebar-nav {
+    position: relative;
+    top: 90px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 60px;
+}
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.5);
+}
+.glyphicon-home, .glyphicon-file, .glyphicon-send, .glyphicon-cog{
+    margin-right: 50px;
+}
+.list-inline li a{
+    color: #4d4d4d;
+    border-radius: 0px;
+}
+.list-inline li a:hover{
+    border-bottom: 1px solid #02658c;
+}
