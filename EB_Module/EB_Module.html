@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat" type="text/css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Module</title>
+</head>
+<body>
+<!-- NAVBAR -->
+  <header data-scroll-header class="navbar navbar-default navbar-fixed-top naver" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand eb-logo" data-scroll href="#main">
+          EDGE<b>BADGE</b>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse main-navigation navcol">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#profil" class="name"><img src="glyphicons_003_user.png" class="img-circle icon_small" width="30" height="30" /> Max Mustermann</a>
+          </li>
+          <li>
+            <button type="button" class="btn btn-default eb-btn eb-abmelden" >Abmelden</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+<br /><br />
+
+<!-- Überschriften -->
+<div class="subjects"><button class="btn_back1" width="30" height="30"></button> MEINE F&Auml;CHER <span class="subjectteacher">Der Lehrer</span><div class="sort_btns"> <button class="sort1">Aa</button><button class="sort2 glyphicon glyphicon-calendar"></button></div></div> 
+
+<br/><br/>
+<hr class="head_row row_grey">
+
+<br /><br />
+
+<br /><br />
+
+<!-- Profilbild -->
+
+<img src="glyphicons_003_user.png" class="img-circle icon_small" width="30" height="30" />
+
+<!-- Zurück Button -->
+
+<button class="btn_back1" width="30" height="30"></button>
+
+<!-- Sort Buttons -->
+
+<button class="sort1">Aa</button><button class="sort2 glyphicon glyphicon-calendar"></button>
+
+<!-- Fachbox -->
+
+  <div>
+    <div class="col-xs-10 col-sm-5 col-md-3 col-lg-2 fachbox">
+      <span class="classname">DEUTSCH</span><br />
+      <span class="teachername">Herr. Prof. Sattek</span>
+      <hr class="classrow">
+      <span class="badgecount">4</span><br />
+      <span class="badgegot">Badges earned</span><br />
+      <button class="btn btn-default eb-btn eb-showbtn" data-subject="DEUTSCH" data-teacher="Herr Prof. Sattek">Anzeigen</button>
+    </div>
+  </div>
+
+
+<br/><br/><br/>
+<!-- Einzelbadge -->
+<div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2 row"><div class="fachbadges"><img src="badge.png" width="120" class="badgeimg" data-badgename="FAUSTBADGE" data-date="12.12.2012" /></div>FAUSTBADGE</div>
+
+<br/><br/><br/>
+<!-- Badgedetail -->
+<div class="badge_desc text-center row">
+  <div class="top_fachbadge col-xs-12">
+    <span class="fachbadge_single"><img src="badge.png" width="220" class="badgeimg_gross"/></span>
+    <span class="badgetitle">BADGENAME</span><br />
+    <span class="badgeteacher">Fach</span><br />
+    <span class="ausgestellt_am">Ausgestellt am: DD.MM.YYYY</span><br />
+    <span class="ausgestellt_von">Ausgestellt von: Max Mustermann</span><br />
+    <button type="button" class="btn btn-default download">Download</button>
+  </div>
+</div>
+<br />
+
+<div class="desc row">
+  <span class="ueberschrift">AUSSTELLUNGSKRITERIUM</span><br />
+
+  <div class="ausstellungskrit">
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+  sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+  voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+  sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+  voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+  sanctus est Lorem ipsum dolor sit amet.
+  </div>
+  <span class="ueberschrift">BESCHREIBUNG</span><br />
+  <div class="beschreibung">
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+  sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+  voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+  magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd 
+  gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+  sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam 
+  voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+  sanctus est Lorem ipsum dolor sit amet.
+  </div>
+  </div>
+</body>
+</html>
