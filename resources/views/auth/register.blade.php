@@ -17,16 +17,8 @@
 							</ul>
 						</div>
 					@endif
-
 					<form class="form-horizontal" role="form" method="POST" action="/auth/register">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">Name</label>
-							<div class="col-md-6">
-								<input type="text" class="form-control" name="name" value="{{ old('name') }}">
-							</div>
-						</div>
 
 						<div class="form-group">
 							<label class="col-md-4 control-label">E-Mail Address</label>
@@ -34,26 +26,68 @@
 								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
 							</div>
 						</div>
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
+                        
+                        <div class="form-group">
+							<label class="col-md-4 control-label">First Name</label>
 							<div class="col-md-6">
-								<input type="password" class="form-control" name="password">
+								<input type="text" class="form-control" name="fname" value="{{ old('fname') }}">
+							</div>
+						</div>
+                        
+                        <div class="form-group">
+							<label class="col-md-4 control-label">Last Name</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="lname" value="{{ old('lname') }}">
+							</div>
+						</div>
+                        
+                        <div class="form-group">
+							<label class="col-md-4 control-label">Pic Url</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="picUrl" value="{{ old('picUrl') }}">
+							</div>
+						</div>
+                        
+                        <div class="form-group">
+							<label class="col-md-4 control-label">Description</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="description" value="{{ old('description') }}">
+							</div>
+						</div>
+                        
+                         <div class="form-group">
+							<label class="col-md-4 control-label">Biography</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="biography" value="{{ old('biography') }}">
+							</div>
+						</div>
+                        
+                         <div class="form-group">
+							<label class="col-md-4 control-label">RoleID</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="roleID" value="{{ old('roleID') }}">
 							</div>
 						</div>
 
+						
+
 						<div class="form-group">
-							<label class="col-md-4 control-label">Confirm Password</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password_confirmation">
+							<div class="col-md-6 col-md-offset-4">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" name="remember"> Remember Me
+									</label>
+								</div>
 							</div>
 						</div>
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">
+								<button type="submit" class="btn btn-primary" style="margin-right: 15px;">
 									Register
 								</button>
+
+								<a href="/password/email">Forgot Your Password?</a>
 							</div>
 						</div>
 					</form>

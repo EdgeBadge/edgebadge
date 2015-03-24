@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Userdata extends Model {
+class Userdata extends Model implements AuthenticatableContract, CanResetPasswordContract{
 
 	/**
 	 * The database table used by the model.
