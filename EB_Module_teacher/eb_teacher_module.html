@@ -21,8 +21,8 @@
 
 <body>            
   <!-- sidebar -->
-  <div id="sidebar-wrapper">
-    <div class="logo">Edge<span class="bold">Badge</span></div>
+  <div id="eb-sidebar">
+    <div class="eb-logo">Edge<span class="bold">Badge</span></div>
     <div class="profil_pic"><img src="images/IMG_1120.jpg" class="img-circle" width="120" height="120"></div>
     <div class="user_name">Alexander Rauscher</div>
     <ul class="sidebar-nav list-unstyled">
@@ -34,28 +34,17 @@
   </div>
    <!-- ende: sidebar -->
     <!-- page-content -->
-  <div id="page-content-wrapper">
+  <div id="eb-content" class="container-fluid">
     <!-- dashboard -->
      <!-- links zum wechselsn zwischen Fächern und Badges welche zuletzt ausgestellt wurden -->
     <ul class="list-inline">
       <li><a href="#">FÄCHER</a></li>
       <li><a href="#">ZULETZT AUSGESTELLT</a></li>
     </ul>
-    <!-- ende: links -->
-    <!-- fach -->
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="fachbox">
-        <span class="classname">DEUTSCH</span><br />
-        <hr class="classrow">
-        <span class="badgecount">4</span><br />
-        <span class="badgegot">Badges ausgestellt</span><br />
-        <button class="btn btn-default showbtn" data-subject="DEUTSCH" data-teacher="Herr Prof. Sattek">Anzeigen</button>
-      </div>
-    </div>
-    <!-- ende: fach -->  
+    <!-- ende: links --> 
     <!-- ausgestellte badge -->
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="panel panel-default">             
+      <div class="eb-panel">             
         <img src="images/badge.png" width="120" />                  
         <h4>Sinus-Badge</h4>
         Fach: Mathe<br />
@@ -65,14 +54,16 @@
     <!-- ende: ausgestellte badge -->
     <!-- badgevorlage -->
     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
-      <div class="panel panel-default">
+      <div class="eb-panel">
         <img src="images/badge4.png" width="80" />
-        <img src="images/checked.png" class="checked_badge" />
+        <img src="images/checked.png" class="eb-checked" />
       </div>
     </div>
     <!-- ende: badgevorlage -->
     <!-- badge erstellen - textfield -->
-    <input type="text" class="form-control" id="ta_badge_name" placeholder="Geben Sie den Badgenamen ein...">
+    <div class="col-sm-6">
+      <input type="text" class="eb-textfield-badgename" placeholder="Geben Sie den Badgenamen ein...">
+    </div>
     <!-- ende: badge erstellen - textfield -->
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <!-- badge erstellen - fächer auswahl -->
@@ -91,12 +82,12 @@
     <!-- badge erstellen - textareas -->
     <div class="col-lg-6">
       Beschreibung:
-      <textarea class="form-control ta_create_badge"></textarea>
+      <textarea class="form-control eb-textarea"></textarea>
     </div>
 
     <div class="col-lg-6">
       Ausstellungskriterium:
-      <textarea class="form-control ta_create_badge"></textarea>
+      <textarea class="form-control eb-textarea"></textarea>
     </div>
     <!-- ende: badge erstellen - textareas -->
 
@@ -107,26 +98,16 @@
         </label>
     </div>
 
-    
-
     <div class="col-lg-3 col-md-4 col-sm-4">
-      <div class="panel panel-default">
+      <div class="eb-panel">
         <img src="images/badge4.png" width="80">
+        <img src="images/checked.png" class="eb-checked">
         <h4>Religions-Zertifikat</h4>
         Fach: Religion
       </div>
     </div>
 
-    <div class="col-lg-3 col-md-4 col-sm-4">
-      <div class="panel panel-default">
-        <img src="images/badge4.png" width="80">
-        <img src="images/checked.png" class="checked_badge">
-        <h4>Religions-Zertifikat</h4>
-        Fach: Religion
-      </div>
-    </div>
-
-    <button class="btn btn-success">Weiter</button>
+    <button class="btn eb-btn">Weiter</button>
 
     <ul class="list-inline">
       <li><a href="#">SCHÜLER</a></li>
