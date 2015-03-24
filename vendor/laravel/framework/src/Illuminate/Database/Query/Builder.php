@@ -172,11 +172,10 @@ class Builder {
 	 */
 	protected $operators = array(
 		'=', '<', '>', '<=', '>=', '<>', '!=',
-		'like', 'like binary', 'not like', 'between', 'ilike',
+		'like', 'not like', 'between', 'ilike',
 		'&', '|', '^', '<<', '>>',
-		'rlike', 'regexp', 'not regexp', 
-		'~', '~*', '!~', '!~*', 'similar to',
-                'not similar to',
+		'rlike', 'regexp', 'not regexp',
+		'~', '~*', '!~', '!~*',
 	);
 
 	/**
@@ -528,7 +527,7 @@ class Builder {
 	{
 		$isOperator = in_array($operator, $this->operators);
 
-		return $isOperator && $operator != '=' && is_null($value);
+		return ($isOperator && $operator != '=' && is_null($value));
 	}
 
 	/**
@@ -1059,10 +1058,7 @@ class Builder {
 
 		$this->havings[] = compact('type', 'column', 'operator', 'value', 'boolean');
 
-		if ( ! $value instanceof Expression)
-		{
-			$this->addBinding($value, 'having');
-		}
+		$this->addBinding($value, 'having');
 
 		return $this;
 	}
@@ -1374,7 +1370,12 @@ class Builder {
 	 */
 	protected function runSelect()
 	{
-		return $this->connection->select($this->toSql(), $this->getBindings(), ! $this->useWritePdo);
+		if ($this->useWritePdo)
+		{
+			return $this->connection->select($this->toSql(), $this->getBindings(), false);
+		}
+
+		return $this->connection->select($this->toSql(), $this->getBindings());
 	}
 
 	/**

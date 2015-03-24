@@ -4,7 +4,6 @@ use Closure;
 use Carbon\Carbon;
 use LogicException;
 use Cron\CronExpression;
-use GuzzleHttp\Client as HttpClient;
 use Illuminate\Contracts\Mail\Mailer;
 use Symfony\Component\Process\Process;
 use Illuminate\Contracts\Container\Container;
@@ -76,11 +75,18 @@ class Event {
 	protected $output = '/dev/null';
 
 	/**
-	 * The array of callbacks to be run after the event is finished.
+	 * The e-mail addresses the command output should be sent to.
 	 *
 	 * @var array
 	 */
-	protected $afterCallbacks = [];
+	protected $emailAddresses = [];
+
+	/**
+	 * The callback to be run after the event is finished.
+	 *
+	 * @var \Closure
+	 */
+	protected $afterCallback;
 
 	/**
 	 * The human readable description of the event.
@@ -108,7 +114,7 @@ class Event {
 	 */
 	public function run(Container $container)
 	{
-		if (count($this->afterCallbacks) > 0)
+		if ($this->afterCallback || ! empty($this->emailAddresses))
 		{
 			$this->runCommandInForeground($container);
 		}
@@ -142,23 +148,49 @@ class Event {
 			trim($this->buildCommand(), '& '), base_path(), null, null, null
 		))->run();
 
-		$this->callAfterCallbacks($container);
+		if ($this->afterCallback)
+		{
+			$container->call($this->afterCallback);
+		}
+
+		if ($this->emailAddresses && $container->bound('Illuminate\Contracts\Mail\Mailer'))
+		{
+			$this->emailOutput($container->make('Illuminate\Contracts\Mail\Mailer'));
+		}
 	}
 
 	/**
-	 * Call all of the "after" callbacks for the event.
+	 * E-mail the output of the event to the recipients.
 	 *
-	 * @param  \Illuminate\Contracts\Container\Container  $container
+	 * @param  \Illuminate\Contracts\Mail\Mailer  $mailer
 	 * @return void
 	 */
-	protected function callAfterCallbacks(Container $container)
+	protected function emailOutput(Mailer $mailer)
 	{
-		if (empty($this->afterCallbacks)) return;
-
-		foreach ($this->afterCallbacks as $callback)
+		$mailer->raw(file_get_contents($this->output), function($m)
 		{
-			$container->call($callback);
+			$m->subject($this->getEmailSubject());
+
+			foreach ($this->emailAddresses as $address)
+			{
+				$m->to($address);
+			}
+		});
+	}
+
+	/**
+	 * Get the e-mail subject line for output results.
+	 *
+	 * @return string
+	 */
+	protected function getEmailSubject()
+	{
+		if ($this->description)
+		{
+			return 'Scheduled Job Output ('.$this->description.')';
 		}
+
+		return 'Scheduled Job Output';
 	}
 
 	/**
@@ -604,56 +636,9 @@ class Event {
 			throw new LogicException("Must direct output to a file in order to e-mail results.");
 		}
 
-		return $this->then(function(Mailer $mailer) use ($addresses)
-		{
-			$this->emailOutput($mailer, is_array($addresses) ? $addresses : func_get_args());
-		});
-	}
+		$this->emailAddresses = is_array($addresses) ? $addresses : func_get_args();
 
-	/**
-	 * E-mail the output of the event to the recipients.
-	 *
-	 * @param  \Illuminate\Contracts\Mail\Mailer  $mailer
-	 * @param  array  $addresses
-	 * @return void
-	 */
-	protected function emailOutput(Mailer $mailer, $addresses)
-	{
-		$mailer->raw(file_get_contents($this->output), function($m) use ($addresses)
-		{
-			$m->subject($this->getEmailSubject());
-
-			foreach ($addresses as $address)
-			{
-				$m->to($address);
-			}
-		});
-	}
-
-	/**
-	 * Get the e-mail subject line for output results.
-	 *
-	 * @return string
-	 */
-	protected function getEmailSubject()
-	{
-		if ($this->description)
-		{
-			return 'Scheduled Job Output ('.$this->description.')';
-		}
-
-		return 'Scheduled Job Output';
-	}
-
-	/**
-	 * Register a callback to the ping a given URL after the job runs.
-	 *
-	 * @param  string  $url
-	 * @return $this
-	 */
-	public function thenPing($url)
-	{
-		return $this->then(function() use ($url) { (new HttpClient)->get($url); });
+		return $this;
 	}
 
 	/**
@@ -664,7 +649,7 @@ class Event {
 	 */
 	public function then(Closure $callback)
 	{
-		$this->afterCallbacks[] = $callback;
+		$this->afterCallback = $callback;
 
 		return $this;
 	}

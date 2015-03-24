@@ -167,9 +167,7 @@ class FilesystemManager implements FactoryContract {
 	 */
 	protected function getRackspaceContainer(Rackspace $client, array $config)
 	{
-		$urlType = array_get($config, 'url_type');
-
-		$store = $client->objectStoreService('cloudFiles', $config['region'], $urlType);
+		$store = $client->objectStoreService('cloudFiles', $config['region']);
 
 		return $store->getContainer($config['container']);
 	}

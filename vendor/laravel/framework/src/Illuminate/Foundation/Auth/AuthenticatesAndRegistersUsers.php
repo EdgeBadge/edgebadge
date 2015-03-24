@@ -30,10 +30,11 @@ trait AuthenticatesAndRegistersUsers {
 		return view('auth.register');
 	}
 
+
 	/**
 	 * Handle a registration request for the application.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
+	 * @param  \Illuminate\Foundation\Http\FormRequest  $request
 	 * @return \Illuminate\Http\Response
 	 */
 	public function postRegister(Request $request)
@@ -71,7 +72,7 @@ trait AuthenticatesAndRegistersUsers {
 	public function postLogin(Request $request)
 	{
 		$this->validate($request, [
-			'email' => 'required|email', 'password' => 'required',
+			'email' => 'required', 'password' => 'required',
 		]);
 
 		$credentials = $request->only('email', 'password');
@@ -84,18 +85,8 @@ trait AuthenticatesAndRegistersUsers {
 		return redirect($this->loginPath())
 					->withInput($request->only('email', 'remember'))
 					->withErrors([
-						'email' => $this->getFailedLoginMesssage(),
+						'email' => 'These credentials do not match our records.',
 					]);
-	}
-
-	/**
-	 * Get the failed login message.
-	 *
-	 * @return string
-	 */
-	protected function getFailedLoginMesssage()
-	{
-		return 'These credentials do not match our records.';
 	}
 
 	/**
