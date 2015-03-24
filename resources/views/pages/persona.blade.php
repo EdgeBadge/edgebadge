@@ -19,7 +19,8 @@
 					@endif
 
 				      <button id="signin" title="Sign in by email, with Persona - opens a new window"><em>Sign in</em></button>
-                      <button id="signout" title="Sign out">Sign out</button> 
+                      <button id="signout" title="Sign out">Sign out</button>
+                    <span id="span"></span>
                     <script src="https://login.persona.org/include.js"></script>
                     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
             <script>               
@@ -30,12 +31,15 @@
                   loggedInUser: currentUser,
                   onlogin: function(assertion) {
                     console.log("Eingeloggt");
-                      console.log(assertion);
+                      
                     $.ajax({ 
                       type: 'POST',
                       url: 'https://login.persona.org/verify', 
-                      data: {assertion: assertion, audience: "homestead.app/persona"},
-                      success: function(res, status, xhr) { window.location.reload(); },
+                      data: {assertion: assertion, audience: "http://edgebadge.app/persona"},
+                      success: function(res, status, xhr) { 
+                          $('#span').append("Eingeloggt als: " + res.email);
+                          
+                      },
                       error: function(xhr, status, err) {
                         navigator.id.logout();
                         alert("Login failure: " + err);
@@ -44,14 +48,8 @@
                   },
                   
                   onlogout: function() {
-                    console.log("Ausgeloggt");
                       currentUser = null;
-                      $.ajax({
-                          type: 'POST',
-                          url: '/auth/logout', 
-                          success: function(res, status, xhr) { window.location.reload(); },
-                          error: function(xhr, status, err) { alert("Logout failure: " + err); }
-                      });
+                      $('#span').text("Sie sind ausgeloggt!");
                   }
                 });
            
