@@ -27,7 +27,7 @@ class Registrar implements RegistrarContract {
 	 */
 	public function create(array $data)
 	{
-		return \Userdata::create([
+		return Userdata::create([
             'personaemail' => 'irgendwas',
 			'email' => $data['email'],
             'firstname' => $data['fname'],
@@ -37,6 +37,7 @@ class Registrar implements RegistrarContract {
             'biography' => $data['biography'],
             'roleID' => $data['roleID'],
 		]);
+        echo $data;
 	}
 
 }

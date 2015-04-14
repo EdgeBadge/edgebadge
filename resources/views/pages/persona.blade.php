@@ -29,16 +29,15 @@
                var currentUser = null;
                navigator.id.watch({
                   loggedInUser: currentUser,
-                  onlogin: function(assertion) {
-                    console.log("Eingeloggt");
-                      
+                  onlogin: function(assertion) {                      
                     $.ajax({ 
                       type: 'POST',
                       url: 'https://login.persona.org/verify', 
                       data: {assertion: assertion, audience: "http://edgebadge.app/persona"},
                       success: function(res, status, xhr) { 
                           $('#span').append("Eingeloggt als: " + res.email);
-                          
+                          console.log("Eingeloggt");
+                          console.log("Email: " + res.email);
                       },
                       error: function(xhr, status, err) {
                         navigator.id.logout();
