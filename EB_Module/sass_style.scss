@@ -1,0 +1,232 @@
+/* ----- COLORS ----- */
+$grey-light: rgba(246, 247, 247, 1);
+$green: rgba(78, 185, 110, 1);
+$green-bright: rgba(116, 214, 0, 1);
+$green-light: rgba(150, 238, 140, 1); 
+$grey-dark: rgba(221, 221, 221, 1);
+$grey-middle: rgba(204, 204, 204, 1);
+$green-middle: rgba(78, 184, 109, 1);
+/* -- COLORS ENDE -- */
+
+
+
+/* ----- ALLGEMEINES ------ */
+*{
+	box-sizing:border-box;
+}
+.ebs-body{
+	padding:10px;
+	padding-top:100px;
+
+	background-color:$grey-light;
+}
+/* -- ALLGEMEINES ENDE */
+
+
+
+/* ----- BUTTONS -----*/
+.ebs-btn{
+	color: $green;
+
+	border-radius:10px;
+	border:1px solid $green;
+	background-color:white;
+
+	-webskit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+.ebs-btn:hover{
+	color:$green-bright;
+	border-color: $green-light;
+}
+
+.ebs-signout{
+	position:relative;
+	top:10px;
+}
+
+.ebs-showbtn{
+	position: relative;
+	bottom:-55px;
+	width:150px;
+}
+
+.ebs-backbtn{
+	position: relative;
+	border-radius: 50px;
+	margin-right:5px;
+	border:0px;
+	width:40px;
+	height:40px;
+	background-image: url(backbtn.svg);
+	opacity:0.7;
+	-webskit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+
+.ebs-backbtn:hover{opacity:1;}
+
+.ebs-sort{
+	margin-left:10px;
+	width:30pt;
+	height:30pt;
+
+	border-radius: 50px;
+	border:0px solid black;
+
+	font-size:20px;
+	
+	background-color:$grey-dark;
+}
+
+@media (max-width: 767px){
+	.ebs-signout{top:0px;}
+}
+/* -- BUTTONS ENDE -- */
+
+
+
+/* ----- NAVBAR ----- */
+.ebs-nav{
+	padding-top:13px;
+	padding-bottom:3px;
+
+	background-color: $green-light;
+}
+
+.ebs-navcollapse{text-align: center;}
+
+@media (max-width: 767px){
+	.ebs-nav{padding-bottom:12px;}
+	.nav{overflow:hidden;}
+}
+.ebs-logo{
+	position:relative;
+
+	font-family: Montserrat;
+	font-size:30px;
+	font-weight:400;
+
+	color:black;
+}
+.ebs-logo > b{font-weight:900;}
+/* -- NAVBAR ENDE -- */
+
+
+
+/* ----- BOXEN -----*/
+.ebs-box{
+	height:330px;
+
+	text-align: center;
+
+	border:1px solid #aaa;
+	border-radius:15px;
+	
+	background-color:white;
+}
+
+.ebs-box > .ebs-row {
+	position:relative;
+	top:35px;
+	width:75%;
+	height:1px;
+	color:$grey-middle;
+	background-color: $grey-middle;
+}
+
+.ebs-singlebsadge{
+	text-align:center;
+}
+
+/* -- BOXEN ENDE -- */
+
+
+
+/* ----- LABELS ----- */
+.ebs-lbl{
+	font-family:Montserrat;
+	font-size: 16px;
+}
+
+.ebs-boxheader{
+	position: relative;
+	top:25px;
+
+	font-weight: bold;
+	font-size:16px;
+}
+
+.ebs-boxsubtitle{
+	position: relative;
+	top:28px;
+
+	font-family: Open Sans;
+}
+
+.ebs-boxcontent{
+	position: relative;
+	top:20px;
+	font-family:Montserrat;
+	font-size:72px;
+	font-weight:bold;
+	color:$green;
+}
+
+.ebs-boxsubcontent{
+	position:relative;
+	font-weight:bold;
+	top:20px;
+}
+
+.ebs-badgetitle{
+	font-weight:bold;
+}
+
+
+.ebs-badgedetail > .ebs-badgetitle {
+	font-size:54px;
+	color: $green-middle;
+}
+
+.ebs-badgedetail > .ebs-subject {
+	font-family: Open Sans;
+	color:#888;
+}
+
+.ebs-desc{
+	margin-bottom:15px;
+}
+/* --LABELS ENDE ----- */
+
+
+
+/* ----- IMAGES ----- */
+
+.ebs-distance{
+	margin-bottom:15px;
+}
+.ebs-badgeimg{
+	-webskit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	-ms-transition: all 200ms ease-in;
+	-o-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+
+.ebs-badgeimg:hover{transform:scale(1.15);}
+
+
+.ebs-image{
+	margin:auto;
+	margin-top:130px;
+	margin-bottom:30px;
+}
+
+/* -- IMAGES ENDE -- */

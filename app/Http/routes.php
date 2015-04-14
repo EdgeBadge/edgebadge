@@ -14,6 +14,10 @@
 Route::get('/', function(){
 	return "<pre>edgebadge v0.0.1b</pre>";
 });
-Route::get("/login", function(){
-	return view('login');
-});
+Route::get('persona', 'PagesController@persona');
+Route::post('auth/login', 'PagesController@login');
+
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);

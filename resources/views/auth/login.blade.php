@@ -17,7 +17,6 @@
 							</ul>
 						</div>
 					@endif
-
 					<form class="form-horizontal" role="form" method="POST" action="/auth/login">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
@@ -27,13 +26,50 @@
 								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
 							</div>
 						</div>
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
+                        
+                        <div class="form-group">
+							<label class="col-md-4 control-label">First Name</label>
 							<div class="col-md-6">
-								<input type="password" class="form-control" name="password">
+								<input type="text" class="form-control" name="fname" value="{{ old('email') }}">
 							</div>
 						</div>
+                        
+                        <div class="form-group">
+							<label class="col-md-4 control-label">Last Name</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="lname" value="{{ old('email') }}">
+							</div>
+						</div>
+                        
+                        <div class="form-group">
+							<label class="col-md-4 control-label">Pic Url</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="picUrl" value="{{ old('email') }}">
+							</div>
+						</div>
+                        
+                        <div class="form-group">
+							<label class="col-md-4 control-label">Description</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="description" value="{{ old('email') }}">
+							</div>
+						</div>
+                        
+                         <div class="form-group">
+							<label class="col-md-4 control-label">Biography</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="biography" value="{{ old('email') }}">
+							</div>
+						</div>
+                        
+                         <div class="form-group">
+							<label class="col-md-4 control-label">RoleID</label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="roleID" value="{{ old('email') }}">
+							</div>
+						</div>
+
+						
 
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-4">

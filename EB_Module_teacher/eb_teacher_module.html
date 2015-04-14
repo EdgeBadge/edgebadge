@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Teacher Module</title>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body class="ebt-body">            
+  <!-- sidebar -->
+  <div id="ebt-sidebar">
+    <div class="ebt-logo">Edge<span class="bold">Badge</span></div>
+    <div class="profil_pic"><img src="images/IMG_1120.jpg" class="img-circle" width="120" height="120"></div>
+    <div class="user_name">Alexander Rauscher</div>
+    <ul class="sidebar-nav list-unstyled">
+      <li><a href="#"><span class="glyphicon glyphicon-home"></span>DASHBOARD</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-file"></span>BADGE ERSTELLEN</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-send"></span>BADGE AUSSTELLEN</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-cog"></span>PROFIL BEARBEITEN</a></li>
+    </ul>
+  </div>
+   <!-- ende: sidebar -->
+    <!-- page-content -->
+  <div id="ebt-content" class="container-fluid">
+    <!-- dashboard -->
+     <!-- links zum wechselsn zwischen Fächern und Badges welche zuletzt ausgestellt wurden -->
+    <ul class="list-inline">
+      <li><a href="#">FÄCHER</a></li>
+      <li><a href="#">ZULETZT AUSGESTELLT</a></li>
+    </ul>
+    <!-- ende: links --> 
+    <!-- ausgestellte badge -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="ebt-panel">             
+        <img src="images/badge.png" width="120" />                  
+        <h4>Sinus-Badge</h4>
+        Fach: Mathe<br />
+        Ausgestellt an: Peter Fuchs      
+      </div>
+    </div>
+    <!-- ende: ausgestellte badge -->
+    <!-- badgevorlage -->
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+      <div class="ebt-panel">
+        <img src="images/badge4.png" width="80" />
+        <img src="images/checked.png" class="ebt-checked" />
+      </div>
+    </div>
+    <!-- ende: badgevorlage -->
+    <!-- badge erstellen - textfield -->
+    <div class="col-sm-6">
+      <input type="text" class="ebt-textfield-badgename" placeholder="Geben Sie den Badgenamen ein...">
+    </div>
+    <!-- ende: badge erstellen - textfield -->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <!-- badge erstellen - fächer auswahl -->
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="xxx" data-toggle="dropdown" aria-expanded="true">
+        Unterrichtsfach <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="xxx">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fach1</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fach2</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fach3</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fach4</a></li>
+      </ul>
+    </div>
+    <!-- ende: badge erstellen - fächer auswahl -->
+    <!-- badge erstellen - textareas -->
+    <div class="col-lg-6">
+      Beschreibung:
+      <textarea class="form-control ebt-textarea"></textarea>
+    </div>
+
+    <div class="col-lg-6">
+      Ausstellungskriterium:
+      <textarea class="form-control ebt-textarea"></textarea>
+    </div>
+    <!-- ende: badge erstellen - textareas -->
+
+    <div class="checkbox">                
+        <label>
+          <input type="checkbox" value="">
+          Sammelbadge
+        </label>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-4">
+      <div class="ebt-panel">
+        <img src="images/badge4.png" width="80">
+        <img src="images/checked.png" class="ebt-checked">
+        <h4>Religions-Zertifikat</h4>
+        Fach: Religion
+      </div>
+    </div>
+
+    <button class="btn ebt-btn">Weiter</button>
+
+    <ul class="list-inline">
+      <li><a href="#">SCHÜLER</a></li>
+      <li><a href="#">KLASSE</a></li>
+    </ul>
+
+    <div class="col-md-5">
+      <input type="text" class="form-control" placeholder="Max Mustermann">
+    </div>
+
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
