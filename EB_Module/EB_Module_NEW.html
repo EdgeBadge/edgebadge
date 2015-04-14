@@ -11,106 +11,105 @@
   <title>Module</title>
 </head>
 <body>
+  <div class="container-fluid">
+    <!-- NAVBAR -->
+    <header data-scroll-header class="navbar navbar-default navbar-fixed-top eb-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand eb-logo" data-scroll href="#main">
+            edge<b>badge</b>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse main-navigation eb-navcollapse">
 
-<!-- NAVBAR -->
-  <header data-scroll-header class="navbar navbar-default navbar-fixed-top eb-nav" role="banner">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand eb-logo" data-scroll href="#main">
-          edge<b>badge</b>
-        </a>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#profil" class="name"><img src="glyphicons_003_user.png" class="img-circle eb-icon-small" width="30" height="30" /> Max Mustermann</a>
+            </li>
+            <li>
+              <button type="button" class="btn eb-btn eb-signout">Abmelden</button>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse main-navigation eb-navcollapse">
+    </header>
+    <!-- NAVBAR ENDE -->
 
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#profil" class="name"><img src="glyphicons_003_user.png" class="img-circle eb-icon-small" width="30" height="30" /> Max Mustermann</a>
-          </li>
-          <li>
-            <button type="button" class="btn eb-btn eb-signout">Abmelden</button>
-          </li>
-        </ul>
+
+    <!-- FACHBOX -->
+
+    <div>
+      <div class="col-xs-10 col-sm-5 col-md-3 col-lg-2 eb-box">
+        <span class="eb-lbl eb-boxheader">DEUTSCH</span><br />
+        <span class="eb-lbl eb-boxsubtitle">Herr. Prof. Sattek</span>
+        <hr class="eb-row">
+        <span class="eb-lbl eb-boxcontent">4</span><br />
+        <span class="eb-lbl eb-boxsubcontent">Badges earned</span><br />
+        <button class="btn eb-btn eb-showbtn" data-subject="DEUTSCH" data-teacher="Herr Prof. Sattek">Anzeigen</button>
       </div>
     </div>
-  </header>
-<!-- NAVBAR ENDE -->
+
+    <!-- FACHBOX ENDE -->
 
 
-<!-- FACHBOX -->
+    <!-- EINZELBADGE -->
 
-  <div>
-    <div class="col-xs-10 col-sm-5 col-md-3 col-lg-2 eb-box">
-      <span class="eb-lbl eb-boxheader">DEUTSCH</span><br />
-      <span class="eb-lbl eb-boxsubtitle">Herr. Prof. Sattek</span>
-      <hr class="eb-row">
-      <span class="eb-lbl eb-boxcontent">4</span><br />
-      <span class="eb-lbl eb-boxsubcontent">Badges earned</span><br />
-      <button class="btn eb-btn eb-showbtn" data-subject="DEUTSCH" data-teacher="Herr Prof. Sattek">Anzeigen</button>
+
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 eb-singlebadge">
+      <div class="eb-distance">
+        <img src="badge.png" width="120" class="eb-lbl eb-badgeimg" data-badgename="FAUSTBADGE" data-date="12.12.2012" />
+      </div>
+      <span class="eb-lbl eb-badgetitle">FAUSTBADGE<span>
+      </div>
+
+      <!-- EINZELBADGE ENDE-->
+
+
+      <!-- ZURÜCK BUTTON -->
+      <button class="eb-backbtn" width="30" height="30"></button>
+      <!-- ZURÜCK BUTTON ENDE-->
+
+      <!-- SORT BUTTONS -->
+      <button class="eb-sort">Aa</button>
+      <button class="eb-sort glyphicon glyphicon-calendar"></button>
+      <!-- SORT BUTTONS ENDE-->
+
+
+      <!-- BADGEDETAIL -->
+      <div>
+        <div class="col-xs-12 eb-image text-center">
+          <div class="col-sm-4 col-md-3 col-lg-2">
+            <img src="badge.png" width="190" class="eb-badgeimg-big"/>
+          </div>
+          <div class="col-sm-8 col-md-9 col-lg-10 eb-badgedetail">
+            <span class="eb-lbl eb-badgetitle">BADGENAME</span><br />
+            <span class="eb-lbl eb-subject">Fach</span><br />
+            <span class="eb-lbl">Ausgestellt am: DD.MM.YYYY</span><br />
+            <span class="eb-lbl">Ausgestellt von: Max Mustermann</span><br />
+            <button type="button" class="btn eb-btn">Download</button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="col-xs-12 text-center">
+        <span class="eb-lbl">AUSSTELLUNGSKRITERIUM</span><br />
+
+        <div class="eb-desc text-center">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+        </div>
+        <span class="eb-lbl">BESCHREIBUNG</span><br />
+        <div class="eb-desc text-center">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+        </div>
+      </div>
+      <!-- BADGEDETAIL ENDE -->
     </div>
-  </div>
+  </body>
 
-<!-- FACHBOX ENDE -->
-
-
-<!-- EINZELBADGE -->
-
-
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 eb-singlebadge">
-<div class="eb-distance">
-<img src="badge.png" width="120" class="eb-lbl eb-badgeimg" data-badgename="FAUSTBADGE" data-date="12.12.2012" />
-</div>
-<span class="eb-lbl eb-badgetitle">FAUSTBADGE<span>
-</div>
-
-<!-- EINZELBADGE ENDE-->
-
-
-<!-- ZURÜCK BUTTON -->
-<button class="eb-backbtn" width="30" height="30"></button>
-<!-- ZURÜCK BUTTON ENDE-->
-
-<!-- SORT BUTTONS -->
-<button class="eb-sort">Aa</button>
-<button class="eb-sort glyphicon glyphicon-calendar"></button>
-<!-- SORT BUTTONS ENDE-->
-
-
-<!-- BADGEDETAIL -->
-<div>
-  <div class="col-xs-12 text-center">
-    <div class="col-sm-4 col-md-3 col-lg-2">
-      <img src="badge.png" width="190" class="eb-badgeimg-big"/>
-    </div>
-    <div class="col-sm-8 col-md-9 col-lg-10 eb-badgedetail">
-      <span class="eb-lbl eb-badgetitle">BADGENAME</span><br />
-      <span class="eb-lbl eb-subject">Fach</span><br />
-      <span class="eb-lbl">Ausgestellt am: DD.MM.YYYY</span><br />
-      <span class="eb-lbl">Ausgestellt von: Max Mustermann</span><br />
-      <button type="button" class="btn eb-btn">Download</button>
-    </div>
-  </div>
-</div>
-<br />
-
-<div class="col-xs-12 text-center">
-  <span class="eb-lbl">AUSSTELLUNGSKRITERIUM</span><br />
-
-  <div class="eb-desc">
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-  </div>
-  <span class="eb-lbl">BESCHREIBUNG</span><br />
-  <div class="eb-desc">
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-  </div>
-</div>
-<!-- BADGEDETAIL ENDE -->
-
-</body>
-
-</html>
+  </html>

@@ -144,6 +144,9 @@ body {
 .eb-badgetitle {
   font-weight: bold; }
 
+.eb-badgedetail {
+  padding-left: 30%; }
+
 .eb-badgedetail > .eb-badgetitle {
   font-size: 54px;
   color: #4eb86d; }
@@ -166,6 +169,10 @@ body {
 
 .eb-badgeimg:hover {
   transform: scale(1.15); }
+
+.eb-image {
+  margin: auto;
+  margin-top: 330px; }
 
 /* -- IMAGES ENDE -- */
 
