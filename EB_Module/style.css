@@ -9,6 +9,16 @@
   padding-top: 100px;
   background-color: #f6f7f7; }
 
+.ebs-headrow {
+  background-color: #cccccc;
+  height: 1px;
+  margin-bottom: 70px; }
+
+.ebs-header {
+  margin-top: 40px;
+  font-size: 26px;
+  font-family: Montserrat; }
+
 /* -- ALLGEMEINES ENDE */
 /* ----- BUTTONS -----*/
 .ebs-btn {
@@ -50,6 +60,9 @@
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in; }
 
+.ebs-download {
+  margin-top: 15px; }
+
 .ebs-backbtn:hover {
   opacity: 1; }
 
@@ -70,7 +83,7 @@
 .ebs-nav {
   padding-top: 13px;
   padding-bottom: 3px;
-  background-color: #96ee8c; }
+  background-color: white; }
 
 .ebs-navcollapse {
   text-align: center; }
@@ -141,13 +154,19 @@
   font-weight: bold;
   top: 20px; }
 
-.ebs-badgetitle {
+.ebs-badgetitle, .ebs-detailtitle {
   font-weight: bold; }
 
-.ebs-badgedetail > .ebs-badgetitle {
+.ebs-detailtitle {
   font-size: 54px;
   color: #4eb86d; }
 
+@media (max-width: 567px) {
+  .ebs-detailtitle {
+    font-size: 42px; } }
+@media (max-width: 420px) {
+  .ebs-detailtitle {
+    font-size: 28px; } }
 .ebs-badgedetail > .ebs-subject {
   font-family: Open Sans;
   color: #888; }

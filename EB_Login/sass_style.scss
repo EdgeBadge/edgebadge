@@ -32,6 +32,10 @@ $green-middle: rgba(78, 184, 109, 1);
 	font-size:26px;
 	font-family:Montserrat;
 }
+
+.ebs-login{
+	background-color:$green-light;
+}
 /* -- ALLGEMEINES ENDE */
 
 
@@ -161,6 +165,10 @@ $green-middle: rgba(78, 184, 109, 1);
 	text-align:center;
 }
 
+.ebs-log{
+	margin-top:20%;
+}
+
 /* -- BOXEN ENDE -- */
 
 
@@ -224,6 +232,16 @@ $green-middle: rgba(78, 184, 109, 1);
 
 .ebs-desc{
 	margin-bottom:15px;
+}
+
+.ebs-login-field{
+	font-size:22px;
+	font-weight:bold;
+	font-family:Montserrat;
+}
+
+.ebs-login-body{
+	background-color:#ffc;
 }
 /* --LABELS ENDE ----- */
 

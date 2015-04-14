@@ -1,0 +1,121 @@
+/** CSS Styles for EdgeBadge Landing Page **/
+html, body{height: 100%; }
+
+h1{font-family: 'Montserrat'; font-weight: bold; text-transform: uppercase;font-size: 48px;}
+h2{font-family: 'Open Sans';  font-weight: 600; font-size: 28px; line-height: 1.2; }
+body{font-family: 'Open Sans'; }
+
+.navbar-brand{color: #fff !important;}
+.logo{
+	font-family: 'Montserrat';
+	font-size: 60px;
+	text-transform: uppercase;
+    margin-top: 15vh;
+}
+.footer_logo{
+    font-family: 'Montserrat';
+	font-size: 40px;
+	text-transform: uppercase;
+    margin-top: 0vh;
+}
+.bold{
+	font-weight: bold;
+}
+.navbar-default{
+	padding-top: 10px;
+
+	background-color: transparent; 
+	color: #fff;
+	border: none;
+}
+.navbar-default .navbar-nav > li > a {
+   color: #fff;
+   font-weight: bold;
+   font-size: 12px;
+    }
+.header{
+	height:100vmin;
+	background: 
+    linear-gradient(
+      rgba(30, 80, 30, 0.8), 
+      rgba(40, 100, 30, 0.8) 
+    ),
+    url(images/background.jpg);
+    background-size:100%;
+    background-repeat: no-repeat;
+	color: #fff;
+}
+.header h1{
+	margin-top: 1vh;
+}
+#push, footer{height: 140px;}
+footer{
+	padding: 22px;
+	background-color: #fbfbfb;
+	color: #888;
+	font-size: 12px;
+	border-top: 1px solid #dadada;
+}
+a{
+	color:  rgb(120, 210, 60);
+}
+#mockup{
+	position: absolute;
+	top:100px;
+	right: 0px;
+	width: 500px;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 2px solid rgb(220,220,220);
+    color: rgb(220,220,220);
+}
+.btn{
+    margin-top: 6vh;
+	background-color: transparent;
+	border: 2px solid rgb(255,255,255);
+	font-weight: 600;
+}
+.btn-default{
+	color: rgb(255,255,255);
+}
+a.btn-mail{
+	margin-top: 20px;
+}
+.subline{
+	padding: 10px 0;
+	color: #888;
+	font-size: 16px;
+	line-height: 1.6;
+	font-weight: 400;
+}
+.col-md-7{
+    width:100%;
+}
+.subheading{
+	font-size: 18px;
+    margin-left:1vh;
+}
+.container{
+    width:100%;
+}
+.panel-default{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	box-shadow: none;
+}
+#page-lead{
+	margin-top:10%;
+	margin-bottom: 100px;
+    text-align:center;
+}
+#img-status{
+	margin-right: 20px;
+}
+#footer-logos{
+	padding-top: 20px;
+}
+#footer-logos img:not(:last-child){
+	margin-right: 20px;
+}
