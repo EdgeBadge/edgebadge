@@ -1,14 +1,12 @@
-/* ----- Colors ----- */
 $green: rgba(27, 163, 156, 1);
 $green-lighter: rgba(27, 163, 156, 0.7);
 $black: rgba(0,0,0,1);
 $white: rgba(255,255,255,1);
 $white-lighter: rgba( $white, 0.5);
 $grey: rgba(204, 204, 204, 1);
-/* --- End: Colors --- */
 
 /* ----- General ----- */
-body{
+.ebt-body{
     font-family: 'Open Sans', sans-serif;
 }
 a:hover, a:active, a:focus{
@@ -17,7 +15,7 @@ a:hover, a:active, a:focus{
 /* --- End: General --- */
 
 /* ----- Sidbar ----- */
-#eb-sidebar {    
+#ebt-sidebar {    
     position: fixed;
     width: 300px;
     height: 100%;
@@ -25,7 +23,7 @@ a:hover, a:active, a:focus{
     background: $green;
     z-index: 1000;
 }
-.eb-logo{    
+.ebt-logo{    
     width: 300px;
     margin-top: 25px;
     text-align: center;
@@ -78,7 +76,7 @@ a:hover, a:active, a:focus{
 
 
 /* ----- Content ----- */
-#eb-content {
+#ebt-content {
     position: absolute;
     left: 300px;
     right: 0px;
@@ -91,7 +89,7 @@ a:hover, a:active, a:focus{
 .list-inline li a:hover{
     border-bottom: 1px solid $green;
 }
-.eb-panel {
+.ebt-panel {
 	margin-bottom: 20px;
 	padding: 10px;
   	background-color: $white;
@@ -99,14 +97,14 @@ a:hover, a:active, a:focus{
   	border-radius: 4px;
   	text-align: center;
 }
-.eb-checked{
+.ebt-checked{
     position: absolute;
     top: 25px;
     left: 70%;
     width: 25px;
     height: 25px;
 }
-.eb-textfield-badgename{
+.ebt-textfield-badgename{
 	width: 100%;
     height: 27px;    
     padding: 0px;
@@ -127,7 +125,7 @@ a:hover, a:active, a:focus{
     padding-top: 20px;
     float: left;    
 }
-.eb-textarea{
+.ebt-textarea{
     height: 100px;
     width: 100%;    
     resize: none;
@@ -136,7 +134,7 @@ a:hover, a:active, a:focus{
 
 
 /* ----- Buttons ----- */
-.eb-btn{
+.ebt-btn{
 	color: $green;
 
 	border-radius: 6px;
@@ -150,11 +148,11 @@ a:hover, a:active, a:focus{
 	-o-transition: all 200ms ease-in;
 	transition: all 200ms ease-in;
 }
-.eb-btn:hover{
+.ebt-btn:hover{
 	color: $green-lighter;
 	border-color: $green;
 }
-.eb-btn-next{
+.ebt-btn-next{
 	background-color: $green;
 }
 /* --- End: Buttons --- */
