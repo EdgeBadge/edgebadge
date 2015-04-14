@@ -28,4 +28,10 @@
             return view('pages.success');
             
         }
+
+        public function dashboard() {
+        
+            return view('masterteacher');
+            
+        }
 }
