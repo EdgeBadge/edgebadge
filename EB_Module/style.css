@@ -1,150 +1,41 @@
+/* ----- COLORS ----- */
+/* -- COLORS ENDE -- */
+/* ----- ALLGEMEINES ----- */
+* {
+  box-sizing: border-box; }
+
 body {
-  background-color: #f6f7f7;
-  padding-top: 100px; }
+  padding: 10px;
+  padding-top: 100px;
+  background-color: #f6f7f7; }
 
-.eb-logo {
-  position: relative;
-  font-family: Montserrat;
-  font-size: 30px;
-  font-weight: 400;
-  color: black; }
-
-.naver {
-  padding-top: 13px;
-  padding-bottom: 3px;
-  background-color: #96ee8c; }
-
-.eb-logo > b {
-  font-weight: 900; }
-
-.name {
-  position: relative;
-  margin-right: 25px;
-  top: -5px;
-  text-align: center; }
-
-.icon_small {
-  margin-right: 20px;
-  border: 1px solid #4eb96e; }
-
-.navcol {
-  text-align: center; }
-
-.eb-btn {
+/* -- ALLGEMEINES ENDE */
+/* ----- BUTTONS -----*/
+.ebs-btn {
   color: #4eb96e;
   border-radius: 10px;
   border: 1px solid #4eb96e;
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in; }
-
-.eb-btn:hover {
-  color: #74d600;
-  border-color: #74d600;
-  background-color: #F5FFF5; }
-
-.eb-abmelden {
-  position: relative;
-  margin-right: 15px;
-  top: 8px; }
-
-.head_row {
-  top: 10px;
-  height: 2px; }
-
-.fachbox {
-  height: 250pt;
-  text-align: center;
-  border: 1px solid #aaa;
-  border-radius: 15px;
-  margin-bottom: 30px;
   background-color: white;
-  margin-left: 6.5%; }
-
-.classname {
-  font-weight: bold;
-  position: relative;
-  top: 25px;
-  font-family: Montserrat;
-  font-size: 16px; }
-
-.teachername {
-  position: relative;
-  font-size: 16px;
-  top: 28px;
-  font-family: Open Sans; }
-
-.classrow {
-  position: relative;
-  margin-top: 55px;
-  width: 75%;
-  height: 1px;
-  color: #ccc;
-  background-color: #ccc; }
-
-.badgecount {
-  position: relative;
-  top: -10px;
-  font-family: Montserrat;
-  font-size: 72px;
-  font-weight: bold;
-  color: #4eb96e; }
-
-.badgegot {
-  position: relative;
-  top: -10px;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: bold; }
-
-.eb-showbtn {
-  position: relative;
-  font-family: Open Sans;
-  top: 20px;
-  width: 150px;
-  height: 36px;
-  border-radius: 10px;
-  color: #4eb96e;
-  border: 1px solid #4eb96e;
-  -webkit-transition: all 200ms ease-in;
+  -webskit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   -ms-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in; }
 
-.eb-showbtn:hover {
+.ebs-btn:hover {
   color: #74d600;
-  border-color: #74d600;
-  background-color: #F5FFF5; }
+  border-color: #96ee8c; }
 
-.subjects {
+.ebs-signout {
   position: relative;
-  font-family: Montserrat;
-  font-size: 28px;
-  font-weight: bold;
-  margin-left: 10%; }
+  top: 10px; }
 
-.row_grey {
-  width: 90%;
-  color: #ccc;
-  background-color: #ccc; }
+.ebs-showbtn {
+  position: relative;
+  bottom: -55px;
+  width: 150px; }
 
-.sort_btns {
-  float: right;
-  margin-right: 10%; }
-
-.sort1, .sort2 {
-  margin-left: 10px;
-  border-radius: 50px;
-  border: 0px solid black;
-  background-color: #ddd;
-  font-size: 20px;
-  width: 30pt;
-  height: 30pt; }
-
-.btn_back1 {
+.ebs-backbtn {
   position: relative;
   border-radius: 50px;
   margin-right: 5px;
@@ -153,259 +44,137 @@ body {
   height: 40px;
   background-image: url(backbtn.svg);
   opacity: 0.7;
-  -webkit-transition: all 200ms ease-in;
+  -webskit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   -ms-transition: all 200ms ease-in;
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in; }
 
-.btn_back1:hover {
+.ebs-backbtn:hover {
   opacity: 1; }
 
-.subjectteacher {
-  position: relative;
-  top: 20px;
-  left: -235px;
-  font-size: 14px;
-  color: #aaa;
-  font-weight: normal;
-  font-family: open sans; }
+.ebs-sort {
+  margin-left: 10px;
+  width: 30pt;
+  height: 30pt;
+  border-radius: 50px;
+  border: 0px solid black;
+  font-size: 20px;
+  background-color: #dddddd; }
 
-.fachbadges {
-  width: 150px;
-  height: 150px;
-  background-color: #f6f7f7;
-  border: 0px;
-  border-radius: 300px;
-  margin: auto;
-  margin-bottom: 10px; }
-
-.badgecontainer {
-  margin-bottom: 50px;
-  text-align: center;
-  /*border:1px solid black;*/
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: bold; }
-
-.badgeimg {
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in; }
-
-.badgeimg:hover {
-  transform: scale(1.15); }
-
-.fachbadge_single {
-  float: left;
-  width: 250px;
-  height: 250px;
-  background-color: #f6f7f7;
-  border: 0px;
-  border-radius: 300px; }
-
-.top_fachbadge {
-  float: left; }
-
-.badgetitle {
-  float: left;
-  margin-left: 30px;
-  margin-top: 20px;
-  font-size: 54px;
-  font-family: Montserrat;
-  color: #4eb86d;
-  font-weight: bold; }
-
-.badgeteacher {
-  position: absolute;
-  left: 270px;
-  top: 50px;
-  margin-left: 30px;
-  margin-top: 70px;
-  font-size: 16px;
-  font-family: Open Sans;
-  color: #888; }
-
-.ausgestellt_am {
-  position: absolute;
-  left: 300px;
-  top: 160px;
-  color: #888; }
-
-.ausgestellt_von {
-  position: absolute;
-  left: 300px;
-  top: 200px;
-  color: #888; }
-
-.download {
-  position: relative;
-  top: 80px;
-  border-radius: 10px;
-  color: #4eb96e;
-  border: 1px solid #4eb96e;
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in; }
-
-.download:hover {
-  color: #74d600;
-  border-color: #74d600;
-  background-color: #F5FFF5; }
-
-.ueberschrift {
-  font-size: 18px;
-  font-family: Montserrat; }
-
-.desc {
-  margin-left: 10%;
-  margin-right: 10%; }
-
-.ausstellungskrit {
-  margin-bottom: 80px;
-  margin-left: 20px;
-  margin-top: 20px; }
-
-.beschreibung {
-  margin-left: 20px;
-  margin-top: 20px; }
-
-@media (max-width: 1580px) and (min-width: 980px) {
-  .fachbox {
-    width: 26%; } }
-@media (max-width: 1580px) and (min-width: 1150px) {
-  .badgecontainer {
-    width: 25%; } }
-@media (max-width: 420px) {
-  .classname {
-    font-size: 13px; }
-
-  .teachername {
-    font-size: 14px; } }
-@media (max-width: 900px) {
-  .top_fachbadge {
-    margin-left: -4%; }
-
-  .badgetitle {
-    position: relative;
-    float: none;
-    margin: 0px 0px 0px 0px;
-    top: 8px;
-    font-size: 34px;
-    text-align: center; }
-
-  .badgeteacher {
-    position: relative;
-    float: none;
-    left: -30px;
-    top: 0px;
-    text-align: center; }
-
-  .ausgestellt_am {
-    position: relative;
-    float: none;
-    margin: 0px;
-    left: 0px;
-    top: 0px;
-    text-align: center; }
-
-  .ausgestellt_von {
-    position: relative;
-    float: none;
-    margin: 0px;
-    left: 0px;
-    top: 0px;
-    text-align: center; }
-
-  .download {
-    margin: auto;
-    top: 20px; }
-
-  .desc {
-    margin-top: 480px; }
-
-  .fachbadge_single {
-    width: 100%;
-    margin-right: 7%; }
-
-  .badge_einzelansicht {
-    margin-left: -5%; }
-
-  .badge_desc {
-    margin-left: 13%; } }
-@media (max-width: 610px) {
-  .badge_desc {
-    margin-left: 7%; }
-
-  .badgetitle {
-    font-size: 24px; }
-
-  .badgeteacher {
-    top: 3px; } }
-@media (max-width: 450px) {
-  /*.badge_desc{margin-left:10%;}*/
-  .subjectteacher {
-    display: none; }
-
-  .badgetitle {
-    font-size: 20px; } }
-@media (max-width: 350px) {
-  .badge_desc {
-    margin-left: 18%; }
-
-  .fachbadge_single {
-    width: 200px;
-    height: 200px;
-    margin-left: 1%; }
-
-  .badgetitle {
-    top: 60px;
-    font-size: 18px; }
-
-  .badgeteacher {
-    top: 56px;
-    font-size: 12px; }
-
-  .ausgestellt_am {
-    top: 52px; }
-
-  .ausgestellt_von {
-    top: 52px; }
-
-  .download {
-    top: 62px; }
-
-  .eb-logo {
-    font-size: 27px; }
-
-  .subjects {
-    font-size: 20px; } }
-@media (max-width: 1100px) and (min-width: 901px) {
-  .badgetitle {
-    font-size: 38px; } }
-@media (min-width: 900px) {
-  .download {
-    position: relative;
-    right: 10%; } }
 @media (max-width: 767px) {
-  .eb-abmelden {
-    margin-bottom: 10px; }
+  .ebs-signout {
+    top: 0px; } }
+/* -- BUTTONS ENDE -- */
+/* ----- NAVBAR ----- */
+.ebs-nav {
+  padding-top: 13px;
+  padding-bottom: 3px;
+  background-color: #96ee8c; }
 
-  a {
-    left: -7px; }
+.ebs-navcollapse {
+  text-align: center; }
 
-  .naver {
+@media (max-width: 767px) {
+  .ebs-nav {
     padding-bottom: 12px; }
-
-  .name {
-    margin-top: 10px;
-    padding-left: 0px; }
 
   .nav {
     overflow: hidden; } }
+.ebs-logo {
+  position: relative;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 400;
+  color: black; }
 
-/*# sourceMappingURL=style.css.map */
+.ebs-logo > b {
+  font-weight: 900; }
+
+/* -- NAVBAR ENDE -- */
+/* ----- BOXEN -----*/
+.ebs-box {
+  height: 330px;
+  text-align: center;
+  border: 1px solid #aaa;
+  border-radius: 15px;
+  background-color: white; }
+
+.ebs-box > .ebs-row {
+  position: relative;
+  top: 35px;
+  width: 75%;
+  height: 1px;
+  color: #cccccc;
+  background-color: #cccccc; }
+
+.ebs-singlebsadge {
+  text-align: center; }
+
+/* -- BOXEN ENDE -- */
+/* ----- LABELS ----- */
+.ebs-lbl {
+  font-family: Montserrat;
+  font-size: 16px; }
+
+.ebs-boxheader {
+  position: relative;
+  top: 25px;
+  font-weight: bold;
+  font-size: 16px; }
+
+.ebs-boxsubtitle {
+  position: relative;
+  top: 28px;
+  font-family: Open Sans; }
+
+.ebs-boxcontent {
+  position: relative;
+  top: 20px;
+  font-family: Montserrat;
+  font-size: 72px;
+  font-weight: bold;
+  color: #4eb96e; }
+
+.ebs-boxsubcontent {
+  position: relative;
+  font-weight: bold;
+  top: 20px; }
+
+.ebs-badgetitle {
+  font-weight: bold; }
+
+.ebs-badgedetail > .ebs-badgetitle {
+  font-size: 54px;
+  color: #4eb86d; }
+
+.ebs-badgedetail > .ebs-subject {
+  font-family: Open Sans;
+  color: #888; }
+
+.ebs-desc {
+  margin-bottom: 15px; }
+
+/* --LABELS ENDE ----- */
+/* ----- IMAGES ----- */
+.ebs-distance {
+  margin-bottom: 15px; }
+
+.ebs-badgeimg {
+  -webskit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in; }
+
+.ebs-badgeimg:hover {
+  transform: scale(1.15); }
+
+.ebs-image {
+  margin: auto;
+  margin-top: 330px;
+  margin-bottom: 30px; }
+
+/* -- IMAGES ENDE -- */
+
+/*# sourceMappingURL=style_new.css.map */

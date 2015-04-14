@@ -7,104 +7,109 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat" type="text/css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
-  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="style_new.css" type="text/css" />
   <title>Module</title>
 </head>
 <body>
-<!-- NAVBAR -->
-  <header data-scroll-header class="navbar navbar-default navbar-fixed-top naver" role="banner">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand eb-logo" data-scroll href="#main">
-          EDGE<b>BADGE</b>
-        </a>
-      </div>
-      <div class="collapse navbar-collapse main-navigation navcol">
+  <div class="container">
+    <!-- NAVBAR -->
+    <header data-scroll-header class="navbar navbar-default navbar-fixed-top ebs-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand ebs-logo" data-scroll href="#main">
+            edge<b>badge</b>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse main-navigation ebs-navcollapse">
 
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#profil" class="name"><img src="glyphicons_003_user.png" class="img-circle icon_small" width="30" height="30" /> Max Mustermann</a>
-          </li>
-          <li>
-            <button type="button" class="btn btn-default eb-btn eb-abmelden" >Abmelden</button>
-          </li>
-        </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#profil" class="name"><img src="glyphicons_003_user.png" class="img-circle ebs-icon-small" width="30" height="30" /> Max Mustermann</a>
+            </li>
+            <li>
+              <button type="button" class="btn ebs-btn ebs-signout">Abmelden</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- NAVBAR ENDE -->
+
+
+    <!-- FACHBOX -->
+
+    <div>
+      <div class="col-xs-10 col-sm-5 col-md-3 col-lg-2 ebs-box">
+        <span class="ebs-lbl ebs-boxheader">DEUTSCH</span><br />
+        <span class="ebs-lbl ebs-boxsubtitle">Herr. Prof. Sattek</span>
+        <hr class="ebs-row">
+        <span class="ebs-lbl ebs-boxcontent">4</span><br />
+        <span class="ebs-lbl ebs-boxsubcontent">Badges earned</span><br />
+        <button class="btn ebs-btn ebs-showbtn" data-subject="DEUTSCH" data-teacher="Herr Prof. Sattek">Anzeigen</button>
       </div>
     </div>
-  </header>
 
-<br /><br />
+    <!-- FACHBOX ENDE -->
 
-<!-- Überschriften -->
-<div class="subjects"><button class="btn_back1" width="30" height="30"></button> MEINE F&Auml;CHER <span class="subjectteacher">Der Lehrer</span><div class="sort_btns"> <button class="sort1">Aa</button><button class="sort2 glyphicon glyphicon-calendar"></button></div></div> 
 
-<br/><br/>
-<hr class="head_row row_grey">
+    <!-- EINZELBADGE -->
 
-<br /><br />
 
-<br /><br />
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 ebs-singlebsadge">
+      <div class="ebs-distance">
+        <img src="badge.png" width="120" class="ebs-lbl ebs-badgeimg" data-badgename="FAUSTBADGE" data-date="12.12.2012" />
+      </div>
+      <span class="ebs-lbl ebs-badgetitle">FAUSTBADGE<span>
+      </div>
 
-<!-- Profilbild -->
+      <!-- EINZELBADGE ENDE-->
 
-<img src="glyphicons_003_user.png" class="img-circle icon_small" width="30" height="30" />
 
-<!-- Zurück Button -->
+      <!-- ZURÜCK BUTTON -->
+      <button class="ebs-backbtn" width="30" height="30"></button>
+      <!-- ZURÜCK BUTTON ENDE-->
 
-<button class="btn_back1" width="30" height="30"></button>
+      <!-- SORT BUTTONS -->
+      <button class="ebs-sort">Aa</button>
+      <button class="ebs-sort glyphicon glyphicon-calendar"></button>
+      <!-- SORT BUTTONS ENDE-->
 
-<!-- Sort Buttons -->
 
-<button class="sort1">Aa</button><button class="sort2 glyphicon glyphicon-calendar"></button>
+      <!-- BADGEDETAIL -->
+      <div>
+        <div class="col-xs-12 ebs-image">
+          <div class="col-xs-6- col-xs-offset-4 col-sm-6 col-sm-offset-4 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3">
+            <img src="badge.png" width="190" class="ebs-badgeimg-big"/>
+          </div>
+          <div class="col-xs-6- col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-0 col-lg-6 ebs-badgedetail pull-center">
+            <span class="ebs-lbl ebs-badgetitle">BADGENAME</span><br />
+            <span class="ebs-lbl ebs-subject">Fach</span><br />
+            <span class="ebs-lbl">Ausgestellt am: DD.MM.YYYY</span><br />
+            <span class="ebs-lbl">Ausgestellt von: Max Mustermann</span><br />
+            <button type="button" class="btn ebs-btn">Download</button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="col-xs-12 text-left">
+        <span class="ebs-lbl">AUSSTELLUNGSKRITERIUM</span><br />
 
-<!-- Fachbox -->
-
-  <div>
-    <div class="col-xs-10 col-sm-5 col-md-3 col-lg-2 fachbox">
-      <span class="classname">DEUTSCH</span><br />
-      <span class="teachername">Herr. Prof. Sattek</span>
-      <hr class="classrow">
-      <span class="badgecount">4</span><br />
-      <span class="badgegot">Badges earned</span><br />
-      <button class="btn btn-default eb-btn eb-showbtn" data-subject="DEUTSCH" data-teacher="Herr Prof. Sattek">Anzeigen</button>
+        <div class="ebs-desc text-left">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+        </div>
+        <span class="ebs-lbl">BESCHREIBUNG</span><br />
+        <div class="ebs-desc text-left">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et doloreLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+        </div>
+      </div>
+      <!-- BADGEDETAIL ENDE -->
     </div>
-  </div>
+  </body>
 
-
-<br/><br/><br/>
-<!-- Einzelbadge -->
-<div class="badgecontainer col-xs-12 col-sm-6 col-md-4 col-lg-2 row"><div class="fachbadges"><img src="badge.png" width="120" class="badgeimg" data-badgename="FAUSTBADGE" data-date="12.12.2012" /></div>FAUSTBADGE</div>
-
-<br/><br/><br/>
-<!-- Badgedetail -->
-<div class="badge_desc text-center row">
-  <div class="top_fachbadge col-xs-12">
-    <span class="fachbadge_single"><img src="badge.png" width="220" class="badgeimg_gross"/></span>
-    <span class="badgetitle">BADGENAME</span><br />
-    <span class="badgeteacher">Fach</span><br />
-    <span class="ausgestellt_am">Ausgestellt am: DD.MM.YYYY</span><br />
-    <span class="ausgestellt_von">Ausgestellt von: Max Mustermann</span><br />
-    <button type="button" class="btn btn-default download">Download</button>
-  </div>
-</div>
-<br />
-
-<div class="desc row">
-  <span class="ueberschrift">AUSSTELLUNGSKRITERIUM</span><br />
-
-  <div class="ausstellungskrit">
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-  </div>
-  <span class="ueberschrift">BESCHREIBUNG</span><br />
-  <div class="beschreibung">
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-  </div>
-</div>
-</body>
-</html>
+  </html>
