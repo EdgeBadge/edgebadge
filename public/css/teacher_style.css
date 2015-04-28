@@ -84,6 +84,14 @@ a:hover, a:active, a:focus {
   margin-top: 10px;
   background-color: #CCC; }
 
+#ebt-badge-erstellen {
+  position: absolute;
+  left: 300px;
+  right: 0px;
+  margin-top: 10px;
+  background-color: #FFF; 
+  display: none;}
+
 .view-subject{
   padding-top: 20px;}
   
@@ -108,11 +116,15 @@ a:hover, a:active, a:focus {
   left: 70%;
   width: 25px;
   height: 25px; }
-
+  
+.ebt-erstell-form{
+  margin-top: 50px;}
+  
 .ebt-textfield-badgename {
   width: 100%;
   height: 27px;
   padding: 0px;
+  margin-bottom: 50px;
   border: 0px;
   border-bottom: 2px solid #1ba39c;
   border-radius: 0px;
@@ -133,6 +145,14 @@ a:hover, a:active, a:focus {
 .ebt-textarea {
   height: 100px;
   width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   resize: none; }
 
 /* --- End: Content --- */

@@ -30,8 +30,14 @@
         }
 
         public function dashboard() {
+            $user = array('firstname'=>'Peter', 'lastname'=>'Schiffmann');
+            return view('badge', $user);
             
-            return view('dashboard_teacher');
+        }
+
+        public function badgeErstellen() {
+            $user = array('firstname'=>'Peter', 'lastname'=>'Schiffmann');
+            return view('badge_erstellen_teacher', $user);
             
         }
 

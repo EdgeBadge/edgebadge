@@ -1,6 +1,6 @@
 @extends('masterteacher')
 
-@section('dashboard')
+@section('content')
 
 	<div id="ebt-dashboard">
 	  <div class="container-fluid">	  	
@@ -26,37 +26,10 @@
 	  		</div>
 	  	</div>
 	  	<div class="row">
-	  		<div class="view-subject">
-	  			<div class="container-fluid col-sm-4">
-		  			<div class="ebt-panel">
-		  				<img src="images/badge.png" width="100px">
-		  			</div>
-		  		</div>
-		  		<div class="container-fluid col-sm-4">
-		  			<div class="ebt-panel">
-		  				<img src="images/badge.png" width="100px">
-		  			</div>
-		  		</div>
-		  		<div class="container-fluid col-sm-4">
-		  			<div class="ebt-panel">
-		  				<img src="images/badge.png" width="100px">
-		  			</div>
-		  		</div>
-		  		<div class="container-fluid col-sm-4">
-		  			<div class="ebt-panel">
-		  				<img src="images/badge.png" width="100px">
-		  			</div>
-		  		</div>
-		  		<div class="container-fluid col-sm-4">
-		  			<div class="ebt-panel">
-		  				<img src="images/badge.png" width="100px">
-		  			</div>
-		  		</div>
-		  		<div class="container-fluid col-sm-4">
-		  			<div class="ebt-panel">
-		  				<img src="images/badge.png" width="100px">
-		  			</div>
-		  		</div>
+	  		<div class="view-subject">	
+	  		@for ($i = 0; $i < 5; $i++)  		
+	  			@yield('badge')	
+	  		@endfor  			
 		  	</div>
 	  	</div>
   	</div>
