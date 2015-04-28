@@ -35,7 +35,15 @@
             
         }
 
-        public function schuelermodule(){
-            return view('schueler_module');
+        public function dashboard_schueler(){
+            return view('dashboard_schueler_modules');
+        }
+
+        public function subject(){
+            return view('subject_modules');
+        }
+
+        public function badgedet(){
+            return view('badgedetail_modules');
         }
 }

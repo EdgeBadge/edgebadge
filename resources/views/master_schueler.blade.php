@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/schuelerstyle.css" type="text/css" />
   <title>Module</title>
 </head>
-<body>
+<body class="ebs-body">
   <div class="container">
   <header data-scroll-header class="navbar navbar-default navbar-fixed-top ebs-nav" role="banner">
       <div class="container">
@@ -29,7 +29,7 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#profil" class="name"><img src="glyphicons_003_user.png" class="img-circle ebs-icon-small" width="30" height="30" /> Max Mustermann</a>
+              <a href="#profil" class="name"><img src="images/glyphicons_003_user.png" class="img-circle ebs-icon-small" width="30" height="30" /> Max Mustermann</a>
             </li>
             <li>
               <button type="button" class="btn ebs-btn ebs-signout">Abmelden</button>
@@ -38,6 +38,8 @@
         </div>
       </div>
     </header>
+        @yield('content')
+
   </div>
 </body>
 
