@@ -30,8 +30,8 @@
         }
 
         public function dashboard() {
-        
-            return view('masterteacher');
+            
+            return view('dashboard_teacher');
             
         }
 }
