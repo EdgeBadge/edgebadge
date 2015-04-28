@@ -4,6 +4,7 @@ html, body{height: 100%; }
 h1{font-family: 'Montserrat'; font-weight: bold; text-transform: uppercase;font-size: 48px;}
 h2{font-family: 'Open Sans';  font-weight: 600; font-size: 28px; line-height: 1.2; }
 body{
+	font-family:'Open Sans';
 	background-color:rgba(78, 185, 110, 1);
 }
 .navbar-brand{color: #fff !important;}
