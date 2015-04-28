@@ -1,0 +1,199 @@
+/* ----- COLORS ----- */
+/* -- COLORS ENDE -- */
+/* ----- ALLGEMEINES ------ */
+* {
+  box-sizing: border-box; }
+
+.ebs-body {
+  padding: 10px;
+  padding-top: 100px;
+  background-color: #f6f7f7; }
+
+.ebs-headrow {
+  background-color: #cccccc;
+  height: 1px;
+  margin-bottom: 70px; }
+
+.ebs-header {
+  margin-top: 40px;
+  font-size: 26px;
+  font-family: Montserrat; }
+
+/* -- ALLGEMEINES ENDE */
+/* ----- BUTTONS -----*/
+.ebs-btn {
+  color: #4eb96e;
+  border-radius: 10px;
+  border: 1px solid #4eb96e;
+  background-color: white;
+  -webskit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in; }
+
+.ebs-btn:hover {
+  color: #74d600;
+  border-color: #96ee8c; }
+
+.ebs-signout {
+  position: relative;
+  top: 10px; }
+
+.ebs-showbtn {
+  position: relative;
+  bottom: -55px;
+  width: 150px; }
+
+.ebs-backbtn {
+  position: relative;
+  border-radius: 50px;
+  margin-right: 5px;
+  border: 0px;
+  width: 40px;
+  height: 40px;
+  background-image: url(backbtn.svg);
+  opacity: 0.7;
+  -webskit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in; }
+
+.ebs-download {
+  margin-top: 15px; }
+
+.ebs-backbtn:hover {
+  opacity: 1; }
+
+.ebs-sort {
+  margin-left: 10px;
+  width: 30pt;
+  height: 30pt;
+  border-radius: 50px;
+  border: 0px solid black;
+  font-size: 20px;
+  background-color: #dddddd; }
+
+@media (max-width: 767px) {
+  .ebs-signout {
+    top: 0px; } }
+/* -- BUTTONS ENDE -- */
+/* ----- NAVBAR ----- */
+.ebs-nav {
+  padding-top: 13px;
+  padding-bottom: 3px;
+  background-color: white; }
+
+.ebs-navcollapse {
+  text-align: center; }
+
+@media (max-width: 767px) {
+  .ebs-nav {
+    padding-bottom: 12px; }
+
+  .nav {
+    overflow: hidden; } }
+.ebs-logo {
+  position: relative;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 400;
+  color: black; }
+
+.ebs-logo > b {
+  font-weight: 900; }
+
+/* -- NAVBAR ENDE -- */
+/* ----- BOXEN -----*/
+.ebs-box {
+  height: 330px;
+  text-align: center;
+  border: 1px solid #aaa;
+  border-radius: 15px;
+  background-color: white; }
+
+.ebs-box > .ebs-row {
+  position: relative;
+  top: 35px;
+  width: 75%;
+  height: 1px;
+  color: #cccccc;
+  background-color: #cccccc; }
+
+.ebs-singlebsadge {
+  text-align: center; }
+
+/* -- BOXEN ENDE -- */
+/* ----- LABELS ----- */
+.ebs-lbl {
+  font-family: Montserrat;
+  font-size: 16px; }
+
+.ebs-boxheader {
+  position: relative;
+  top: 25px;
+  font-weight: bold;
+  font-size: 16px; }
+
+.ebs-boxsubtitle {
+  position: relative;
+  top: 28px;
+  font-family: Open Sans; }
+
+.ebs-boxcontent {
+  position: relative;
+  top: 20px;
+  font-family: Montserrat;
+  font-size: 72px;
+  font-weight: bold;
+  color: #4eb96e; }
+
+.ebs-boxsubcontent {
+  position: relative;
+  font-weight: bold;
+  top: 20px; }
+
+.ebs-badgetitle, .ebs-detailtitle {
+  font-weight: bold; }
+
+.ebs-detailtitle {
+  font-size: 54px;
+  color: #4eb86d; }
+
+@media (max-width: 567px) {
+  .ebs-detailtitle {
+    font-size: 42px; } }
+@media (max-width: 420px) {
+  .ebs-detailtitle {
+    font-size: 28px; } }
+.ebs-badgedetail > .ebs-subject {
+  font-family: Open Sans;
+  color: #888; }
+
+.ebs-desc {
+  margin-bottom: 15px; }
+
+/* --LABELS ENDE ----- */
+/* ----- IMAGES ----- */
+.ebs-distance {
+  margin-bottom: 15px; }
+
+.ebs-badgeimg {
+  -webskit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in; }
+
+.ebs-badgeimg:hover {
+  transform: scale(1.15); }
+
+.ebs-image {
+  margin: auto;
+  margin-top: 130px;
+  margin-bottom: 30px; }
+
+/* -- IMAGES ENDE -- */
+
+/*# sourceMappingURL=style.css.map */

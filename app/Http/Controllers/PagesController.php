@@ -34,4 +34,8 @@
             return view('dashboard_teacher');
             
         }
+
+        public function schuelermodule(){
+            return view('schueler_module');
+        }
 }
