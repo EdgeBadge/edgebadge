@@ -42,6 +42,7 @@
         }
 
         public function dashboard_schueler(){
+            $badge = array('fachname'=>'Deutsch', 'lehrername'=>'Faustbadge', 'badgesNum' => '42');
             return view('dashboard_schueler_modules', $badge);
         }
 
@@ -51,6 +52,12 @@
         }
 
         public function badgedet(){
+            $badge = array('badgename'=>'Rauschermeister', 'fach'=>'Pudgarn', 'ausstellungsDatum' => '2015-4-20', 'ausstellungsLehrer'=>'Herr Prof. Siebenundzwanzig', 'ausstellungsKrit'=>'Man muss der Meister in allem sein', 'beschreibung'=>'Du bist jetzt der Meister in allem');
             return view('badgedetail_modules', $badge);
         }
+
+        public function register(){
+            return view('eb_login');
+        }
+
 }
