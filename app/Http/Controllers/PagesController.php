@@ -42,14 +42,15 @@
         }
 
         public function dashboard_schueler(){
-            return view('dashboard_schueler_modules');
+            return view('dashboard_schueler_modules', $badge);
         }
 
         public function subject(){
-            return view('subject_modules');
+            $badge = array('fachname'=>'Deutsch', 'badgename'=>'Faustbadge');
+            return view('subject_modules', $badge);
         }
 
         public function badgedet(){
-            return view('badgedetail_modules');
+            return view('badgedetail_modules', $badge);
         }
 }

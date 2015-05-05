@@ -21,7 +21,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand ebs-logo" data-scroll href="#main">
+          <a class="navbar-brand ebs-logo" data-scroll href="{{ URL::to('schueler') }}">
             edge<b>badge</b>
           </a>
         </div>

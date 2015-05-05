@@ -1,13 +1,12 @@
 /* ----- COLORS ----- */
 /* -- COLORS ENDE -- */
 /* ----- ALLGEMEINES ------ */
-* {
-  box-sizing: border-box; }
+*{box-sizing: border-box; }
 
 .ebs-body {
   padding: 10px;
   padding-top: 100px;
-  background-color: #f6f7f7; }
+  background-color: #f6f7f7;}
 
 .ebs-headrow {
   background-color: #cccccc;
@@ -111,7 +110,7 @@
   text-align: center;
   border: 1px solid #aaa;
   border-radius: 15px;
-  background-color: white; }
+  background-color: white;}
 
 .ebs-box > .ebs-row {
   position: relative;
@@ -121,7 +120,7 @@
   color: #cccccc;
   background-color: #cccccc; }
 
-.ebs-singlebsadge {
+.ebs-singlebadge {
   text-align: center; }
 
 /* -- BOXEN ENDE -- */
@@ -177,7 +176,7 @@
 /* --LABELS ENDE ----- */
 /* ----- IMAGES ----- */
 .ebs-distance {
-  margin-bottom: 15px; }
+  margin-bottom: 25px; }
 
 .ebs-badgeimg {
   -webskit-transition: all 200ms ease-in;
@@ -190,7 +189,6 @@
   transform: scale(1.15); }
 
 .ebs-image {
-  margin: auto;
   margin-bottom: 30px; }
 
 /* -- IMAGES ENDE -- */
