@@ -2,8 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Userdata extends Model implements AuthenticatableContract, CanResetPasswordContract{
-
+class Userdata extends Model{
 	/**
 	 * The database table used by the model.
 	 *
@@ -22,6 +21,6 @@ class Userdata extends Model implements AuthenticatableContract, CanResetPasswor
 	 *
 	 * @var array
 	 */
-	protected $hidden = ['personaemail'];
+	protected $hidden = [];
 
 }
