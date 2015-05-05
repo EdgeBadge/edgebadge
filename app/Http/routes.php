@@ -21,8 +21,7 @@ Route::get('badgedetail','PagesController@badgedet');
 Route::get('dashboard', 'PagesController@dashboard');
 Route::get('badge-erstellen', 'PagesController@badgeErstellen');
 Route::get('persona', 'PagesController@persona');
-Route::post('auth/login', 'PagesController@login');
-Route::get('register','PagesController@register');
+Route::get('home','PagesController@register');
 
 
 
