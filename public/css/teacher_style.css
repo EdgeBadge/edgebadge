@@ -70,6 +70,46 @@ a:hover, a:active, a:focus {
   margin-right: 50px; }
 
 /* --- End: Sidebar --- */
+/* --- Navbar --- */
+.navbar{
+  display: none;
+  background-color: #1ba39c;}
+.nav.toggled{
+  display:block;}
+@media(max-width: 768px) {
+  .navbar{
+    padding-top: 8px;
+    display: inline-block;
+    color: #fff;}
+  .nav{
+    display: none;
+  }
+  .navbar>.list-inline li{
+    font-size: 25px;}
+  .navbar>.list-inline li a{
+    color: #fff !important;
+    font-size: 25px;}   
+  .navbar-default .navbar-nav>li>a{
+    color: #fff;}   
+  .glyphicon-home, .glyphicon-file, .glyphicon-send, .glyphicon-cog {
+    margin-left: 12.5px;
+    margin-right: 25px;}
+  #ebt-sidebar{
+    display: none;}
+  #ebt-dashboard{
+    left: 0px !important;
+    margin-top: 50px !important;}
+  #ebt-badge-erstellen{
+    left: 0px !important;
+    margin-top: 50px !important;}
+  .margin-bottom{
+    padding-bottom:50px !important;}
+  .selected-badge{
+    padding-top: 20px;
+    border-left: 0px !important;
+    border-top: 1px solid #000;}
+}
+/* --- End: Navbar --- */
 /* ----- Content ----- */
 .bg-white{
   background-color: #FFF;
@@ -82,15 +122,14 @@ a:hover, a:active, a:focus {
   left: 300px;
   right: 0px;
   margin-top: 10px;
-  background-color: #CCC; }
+  background-color: rgba(218, 223, 225, 1);}
 
 #ebt-badge-erstellen {
   position: absolute;
   left: 300px;
   right: 0px;
   margin-top: 10px;
-  background-color: #FFF; 
-  display: none;}
+  background-color: #FFF;}
 
 .view-subject{
   padding-top: 20px;}
@@ -131,16 +170,7 @@ a:hover, a:active, a:focus {
   font-size: 16px;
   resize: none;
   box-shadow: none;
-  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
-
-.badge_choice {
-  width: 100%;
-  min-height: 300px;
-  background-color: #EDF3F4; }
-
-.badge_selected {
-  padding-top: 20px;
-  float: left; }
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }    
 
 .ebt-textarea {
   height: 100px;
@@ -154,6 +184,18 @@ a:hover, a:active, a:focus {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: none; }
+  
+.badge-selection-area{
+  margin: 50px 0px;
+  background-color: rgba(218, 223, 225, 1);
+  border-radius: 4px;}
+
+.preview-badge{
+  padding-top: 20px;}
+  
+.selected-badge{
+  padding-top: 20px;
+  border-left: 1px solid #000;}
 
 /* --- End: Content --- */
 /* ----- Buttons ----- */
@@ -173,7 +215,13 @@ a:hover, a:active, a:focus {
   border-color: #1ba39c; }
 
 .ebt-btn-next {
-  background-color: #1ba39c; }
+  color: #ffffff;
+  background-color: #1ba39c;}
+
+.ebt-btn:hover {
+  color: #ffffff;
+  border-color: #1ba39c; }
+
 
 /* --- End: Buttons --- */
 

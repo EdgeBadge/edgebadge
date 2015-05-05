@@ -47,8 +47,57 @@
 				  <textarea class="ebt-textarea"></textarea>
 				</div>
 			</div>
+			<div class="container-fluid row">
+				<div class="badge-selection-area row">
+					<div class="col-sm-8 preview-badge">     
+						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+							<div class="ebt-panel">
+								<img src="images/badge2.png" width="80" />
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+							<div class="ebt-panel">
+								<img src="images/badge.png" width="80" />
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+							<div class="ebt-panel">
+								<img src="images/badge2.png" width="80" />
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+							<div class="ebt-panel">
+								<img src="images/badge3.png" width="80" />
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+							<div class="ebt-panel">
+								<img src="images/badge3.png" width="80" />
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+							<div class="ebt-panel">
+								<img src="images/badge3.png" width="80" />
+							</div>
+						</div>
+						<div class="clearfix visible-xs-block"></div>
+					</div>
+					<div class="col-sm-4 selected-badge">     
+						<div class="col-sm-12">
+							<div class="ebt-panel">
+								<img src="images/badge2.png" width="200" />
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container-fluid">
+					<button class="btn ebt-btn ebt-btn-next pull-right">Erstellen</button>
+				</div>
+			</div>
 		</form>
   	  </div>
-  	</div>
+    </div>
 
 @stop

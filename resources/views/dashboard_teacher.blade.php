@@ -25,13 +25,12 @@
 			    </ul>
 	  		</div>
 	  	</div>
-	  	<div class="row">
-	  		<div class="view-subject">	
-	  		@for ($i = 0; $i < 5; $i++)  		
+		<div class="view-subject row">
+			@for ($i = 0; $i < 5; $i++)  		
 	  			@yield('badge')	
-	  		@endfor  			
-		  	</div>
-	  	</div>
-  	</div>
+	  		@endfor
+		</div>
+  	  </div>
+    </div>
 
 @stop
