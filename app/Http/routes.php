@@ -18,6 +18,7 @@ Route::get('/', function(){
 Route::get('schueler','PagesController@dashboard_schueler');
 Route::get('subject','PagesController@subject');
 Route::get('badgedetail','PagesController@badgedet');
+Route::get('profile','PagesController@profile');
 Route::get('dashboard', 'PagesController@dashboard');
 Route::get('badge-erstellen', 'PagesController@badgeErstellen');
 Route::get('persona', 'PagesController@persona');

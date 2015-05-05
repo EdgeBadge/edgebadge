@@ -60,4 +60,8 @@
             return view('eb_login');
         }
 
+        public function profile(){
+            $profil = array('schuelerName'=>'Max Mustermann', 'class'=>'4CI', 'mail'=>'max@mustermann.at', 'beschreibung'=>'Ich bin der beste Schüler dieser Welt!!!' );
+            return view('profile', $profil);
+        }
 }

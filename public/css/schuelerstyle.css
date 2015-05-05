@@ -59,8 +59,24 @@
   -o-transition: all 200ms ease-in;
   transition: all 200ms ease-in; }
 
-.ebs-download {
+.ebs-download, .ebs-delete {
   margin-top: 15px; }
+
+  .ebs-delete{
+    border-color: red;
+    color:red;
+  }
+
+  .ebs-delete:hover{
+    color:red;
+    border-color: red;
+    background-color: rgba(242, 38, 19, 0.2);
+  }
+
+.ebs-delete{
+  border-color: red;
+  color:red;
+}
 
 .ebs-backbtn:hover {
   opacity: 1; }
