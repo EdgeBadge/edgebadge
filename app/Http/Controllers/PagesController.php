@@ -31,14 +31,22 @@
 
         public function dashboard() {
             $user = array('firstname'=>'Peter', 'lastname'=>'Schiffmann');
-            return view('badge', $user);
-            
+            return view('badge', $user);            
         }
 
         public function badgeErstellen() {
             $user = array('firstname'=>'Peter', 'lastname'=>'Schiffmann');
-            return view('badge_erstellen_teacher', $user);
-            
+            return view('badge_erstellen_teacher', $user);            
+        }
+
+        public function badgeAusstellen() {
+            $user = array('firstname'=>'Peter', 'lastname'=>'Schiffmann');
+            return view('badge_ausstellen_teacher', $user);
+        }
+
+        public function selectStudents() {
+            $user = array('firstname'=>'Peter', 'lastname'=>'Schiffmann');
+            return view('select_students', $user);
         }
 
         public function dashboard_schueler(){

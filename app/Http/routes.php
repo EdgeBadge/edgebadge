@@ -21,6 +21,8 @@ Route::get('badgedetail','PagesController@badgedet');
 Route::get('profile','PagesController@profile');
 Route::get('dashboard', 'PagesController@dashboard');
 Route::get('badge-erstellen', 'PagesController@badgeErstellen');
+Route::get('badge-ausstellen', 'PagesController@badgeAusstellen');
+Route::get('select-students', 'PagesController@selectStudents');
 Route::get('persona', 'PagesController@persona');
 Route::get('home','PagesController@register');
 

@@ -49,43 +49,43 @@
 			</div>
 			<div class="container-fluid row">
 				<div class="badge-selection-area row">
-					<div class="col-sm-8 preview-badge">     
-						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+					<div class="col-md-7 col-sm-12 preview-badge">     
+						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="ebt-panel">
-								<img src="images/badge2.png" width="80" />
+								<img src="images/badge2.png" width="100" />
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="ebt-panel">
-								<img src="images/badge.png" width="80" />
+								<img src="images/badge.png" width="100" />
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="ebt-panel">
-								<img src="images/badge2.png" width="80" />
+								<img src="images/badge2.png" width="100" />
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="ebt-panel">
-								<img src="images/badge3.png" width="80" />
+								<img src="images/badge3.png" width="100" />
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="ebt-panel">
-								<img src="images/badge3.png" width="80" />
+								<img src="images/badge3.png" width="100" />
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+						<div class="col-md-4 col-sm-4 col-xs-6">
 							<div class="ebt-panel">
-								<img src="images/badge3.png" width="80" />
+								<img src="images/badge3.png" width="100" />
 							</div>
 						</div>
 						<div class="clearfix visible-xs-block"></div>
 					</div>
-					<div class="col-sm-4 selected-badge">     
+					<div class="col-md-5 col-sm-12 selected-badge">     
 						<div class="col-sm-12">
 							<div class="ebt-panel">
-								<img src="images/badge2.png" width="200" />
+								<img src="images/badge2.png" width="236" />
 							</div>
 						</div>					
 					</div>

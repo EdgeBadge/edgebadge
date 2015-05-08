@@ -18,7 +18,7 @@
     <ul class="sidebar-nav list-unstyled">
       <li><a href="{{ URL::to('dashboard') }}"><span class="glyphicon glyphicon-home"></span>DASHBOARD</a></li>
       <li><a href="{{ URL::to('badge-erstellen') }}"><span class="glyphicon glyphicon-file"></span>BADGE ERSTELLEN</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-send"></span>BADGE AUSSTELLEN</a></li>
+      <li><a href="{{ URL::to('badge-ausstellen') }}"><span class="glyphicon glyphicon-send"></span>BADGE AUSSTELLEN</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-cog"></span>PROFIL BEARBEITEN</a></li>
     </ul>
   </div>
@@ -30,7 +30,7 @@
         <ul class="nav navbar-nav">
           <li><a href="{{ URL::to('dashboard') }}"><span class="glyphicon glyphicon-home"></span>DASHBOARD</a></li>
           <li><a href="{{ URL::to('badge-erstellen') }}"><span class="glyphicon glyphicon-file"></span>BADGE ERSTELLEN</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-send"></span>BADGE AUSSTELLEN</a></li>
+          <li><a href="{{ URL::to('badge-ausstellen') }}"><span class="glyphicon glyphicon-send"></span>BADGE AUSSTELLEN</a></li>
           <li><a href="#"><span class="glyphicon glyphicon-cog"></span>PROFIL BEARBEITEN</a></li>
         </ul>
     </div>
@@ -39,14 +39,6 @@
 
     <script>
   $(document).ready(function() {
-  $('#dashboard').click(function() {
-    $('#ebt-dashboard').css('display', 'block');
-    $('#ebt-badge-erstellen').css('display', 'none');
-  });
-  $('#badge-erstellen').click(function() {
-    $('#ebt-dashboard').css('display', 'none');
-    $('#ebt-badge-erstellen').css('display', 'block');
-  });
   $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $(".nav").toggleClass("toggled");
