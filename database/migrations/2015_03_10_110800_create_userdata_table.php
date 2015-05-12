@@ -20,7 +20,6 @@ class CreateUserdataTable extends Migration {
 			$table->string('lastname');
 			$table->string('firstname');
 			$table->string('picURL');
-			$table->text('description');
 			$table->text('biography');
 			$table->integer('roleID');
 			$table->timestamps();

@@ -14,7 +14,7 @@ class Userdata extends Model{
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['lastname', 'firstname', 'email', 'descripton', 'biography', 'picURL', 'roleID'];
+	protected $fillable = ['lastname', 'firstname', 'email', 'biography', 'picURL', 'roleID'];
 
 	/**
 	 * The attributes excluded from the model's JSON form.
