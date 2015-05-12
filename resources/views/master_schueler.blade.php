@@ -32,7 +32,7 @@
               <a href="{{ URL::to('profile') }}" class="name"><img src="images/glyphicons_003_user.png" class="img-circle ebs-icon-small" width="30" height="30" /> Max Mustermann</a>
             </li>
             <li>
-              <button type="button" class="btn ebs-btn ebs-signout">Abmelden</button>
+              <a href="{{ URL::to('home') }}"><button type="button" class="btn ebs-btn">Abmelden</button></a>
             </li>
           </ul>
         </div>

@@ -5,9 +5,12 @@
 @yield('headline')
 
 <div class="row">
-@for($i = 0; $i < 8; $i++)
+
+<!-- @for($i = 0; $i < 8; $i++)
 @yield('fachbox')
-@endfor
+@endfor -->
+
+@yield('fachbox')
 </div>
 
 @endsection

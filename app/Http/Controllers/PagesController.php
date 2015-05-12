@@ -50,12 +50,12 @@
         }
 
         public function dashboard_schueler(){
-            $badge = array('fachname'=>'Deutsch', 'lehrername'=>'Faustbadge', 'badgesNum' => '42');
+            $badge = array('multi' => array('fachname'=>array('Deutsch', 'Mathematik', 'Englisch', 'Programmieren', 'Chemie', 'Sport'), 'lehrername'=>array('Gruber', 'Muber', 'Luber', 'Schuber','Ruder', 'Messi'), 'badgesNum' => array('4','2','0','20','30', '31')));
             return view('dashboard_schueler_modules', $badge);
         }
 
         public function subject(){
-            $badge = array('fachname'=>'Deutsch', 'badgename'=>'Faustbadge');
+            $badge = array('multi' => array('fachname'=>'Deutsch', 'badgename'=>array( 'Faustbadge','Königsbadge','Tafelbadge', 'Grammatikbadge', 'Faustbadge','Königsbadge','Tafelbadge', 'Grammatikbadge', 'Faustbadge','Königsbadge','Tafelbadge', 'Grammatikbadge', 'Faustbadge','Königsbadge','Tafelbadge', 'Grammatikbadge')));
             return view('subject_modules', $badge);
         }
 
