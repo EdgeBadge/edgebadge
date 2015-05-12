@@ -1,7 +1,7 @@
 @extends('dashboard_schueler')
 
 @section('fachbox')
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ebs-distance" style="padding:12px;">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ebs-distance">
         <div class="ebs-box">
           <span class="ebs-lbl ebs-boxheader">{{ $fachname }}</span><br />
           <span class="ebs-lbl ebs-boxsubtitle">{{ $lehrername }}</span>

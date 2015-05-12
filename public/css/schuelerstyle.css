@@ -173,15 +173,30 @@
   font-weight: bold; }
 
 .ebs-detailtitle {
-  font-size: 54px;
+  font-size: 46px;
   color: #4eb86d; }
 
-@media (max-width: 567px) {
+@media (max-width: 667px) {
   .ebs-detailtitle {
-    font-size: 42px; } }
-@media (max-width: 420px) {
+    font-size: 36px; } }
+@media (max-width: 490px) {
   .ebs-detailtitle {
-    font-size: 28px; } }
+    font-size: 24px; }
+  .ebs-subject, .ebs-ausstell{
+    font-size: 14px;
+    } }
+@media (max-width: 320px) {
+  .ebs-detailtitle {
+    font-size: 20px; }
+  .ebs-subject, .ebs-ausstell{
+    font-size: 12px;
+    } 
+  .ebs-krit, .eb-besch{
+    font-size:15px;
+  }
+  .ebs-desc {
+    font-size:12px;
+    }}
 .ebs-badgedetail > .ebs-subject {
   font-family: Open Sans;
   color: #888; }
