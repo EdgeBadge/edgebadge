@@ -25,6 +25,7 @@ Route::get('badge-ausstellen', 'PagesController@badgeAusstellen');
 Route::get('select-students', 'PagesController@selectStudents');
 Route::get('persona', 'PagesController@persona');
 Route::get('home','PagesController@register');
+Route::get('/badge/json','PagesController@register');
 
 
 

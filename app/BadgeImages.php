@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class BadgeImages extends Model {
+class BadgeImage extends Model {
 
 	/**
 	 * The database table used by the model.

@@ -17,6 +17,7 @@ class CreateBadgesTable extends Migration {
 			$table->increments('badgeID');
 			$table->string('name')->unique();
 			$table->string('about');
+			$table->string('criteriaurl');
 			$table->integer('fk_BadgeImage');
 			$table->integer('fk_SubjectGroup');
 			$table->integer('fk_IssueID');
