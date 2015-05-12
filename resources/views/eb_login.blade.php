@@ -25,6 +25,7 @@
                     <script src="https://login.persona.org/include.js"></script>
                     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
             <script>               
+                
                var currentUser = null;
                navigator.id.watch({
                   loggedInUser: currentUser,
@@ -36,10 +37,13 @@
                       success: function(res, status, xhr) {
                           $('#span').text("");
                           $('#span').append("Eingeloggt als: " + res.email);
-                          console.log("Eingeloggt");
-                          console.log(status);
-                          console.log(res);
-                          console.log(assertion);  
+                          
+                              $('<form name="formular" action="/auth/login" method="POST">' + 
+                                '<input type="hidden" name="_token" value="{{ csrf_token() }}">' + 
+                                '<input type="hidden" name="email" value="' + res.email + '">' +
+                                '<input type="hidden" name="pemail" value="' + assertion + '">' +
+                                '</form>').submit();
+                            
                       },
                       error: function(xhr, status, err) {
                         navigator.id.logout();
